@@ -1,0 +1,24 @@
+image: node:18-alpine
+
+stages:
+  - build
+  - publish
+
+cache:
+  key: modules
+  paths:
+  - dist/
+
+build:
+  stage: build
+  script:
+    - yarn install
+    - yarn build
+
+publish:
+  stage: publish
+  only:
+    - tags
+  script:
+    - yarn config set npmAuthToken $NPM_AUTH_TOKEN
+    - yarn npm publish
