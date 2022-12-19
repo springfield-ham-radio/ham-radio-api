@@ -21,4 +21,4 @@ publish:
     - tags
   script:
     - yarn config set npmAuthToken $NPM_AUTH_TOKEN
-    - yarn npm publish
+    - yarn npm publish --access public
