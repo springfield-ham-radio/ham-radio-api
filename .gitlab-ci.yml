@@ -7,7 +7,9 @@ stages:
 cache:
   key: modules
   paths:
-  - dist/
+    - node_modules/
+    - .yarn/cache/
+    - dist/
 
 build:
   stage: build
