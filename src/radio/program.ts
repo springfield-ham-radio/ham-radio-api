@@ -1,4 +1,4 @@
-import { RadioProgrammedChannel } from './radio-programmed-channel.js';
+import { RadioProgrammedChannel } from './programmed-channel.js';
 
 export interface RadioProgram<Settings> {
   settings: Settings;

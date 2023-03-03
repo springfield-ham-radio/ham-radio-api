@@ -1,7 +1,8 @@
-import { RadioChannelReference } from './radio-channel-reference.js';
-import { RadioChannel } from './radio-channel.js';
+import { RadioChannelReference } from './channel-reference.js';
+import { RadioChannel } from './channel.js';
 
 export interface RadioProgrammedChannel {
+  id?: string;
   channelNumber: number;
   transmitPower: number;
   radioChannel: RadioChannel | RadioChannelReference;

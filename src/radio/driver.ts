@@ -1,5 +1,5 @@
-import { RadioProgram } from './radio-program.js';
-import { RadioProgressIndicator } from './radio-progress-indicator.js';
+import { RadioProgram } from './program.js';
+import { RadioProgressIndicator } from './progress-indicator.js';
 
 export interface RadioDriver<Settings> {
   importFromRadio(path: string, progressIndicator: RadioProgressIndicator): Promise<RadioProgram<Settings>>;
