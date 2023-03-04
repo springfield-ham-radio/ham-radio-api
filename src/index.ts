@@ -1,8 +1,11 @@
 export * from './license/class.js';
 
-export * from './radio/channel.js';
 export * from './radio/channel-reference.js';
+export * from './radio/channel.js';
+export * from './radio/connection.js';
 export * from './radio/driver.js';
+export * from './radio/manufacturer.js';
+export * from './radio/model.js';
 export * from './radio/program.js';
 export * from './radio/programmed-channel.js';
 export * from './radio/progress-indicator.js';
