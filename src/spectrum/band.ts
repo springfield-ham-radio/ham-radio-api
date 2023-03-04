@@ -6,6 +6,8 @@ export interface SpectrumBand {
   wavelength: number;
   lowerFrequency: number;
   upperFrequency: number;
+  frequencyDisplayBaseMultiplier: number;
+  frequencyDisplayNumberDecimals: number;
   privilegeIds: string[];
   channels?: SpectrumChannel[];
 }
