@@ -1,5 +1,5 @@
 export interface RadioModel {
   id?: string;
-  modelName: string;
+  name: string;
   manufactureId: string;
 }
