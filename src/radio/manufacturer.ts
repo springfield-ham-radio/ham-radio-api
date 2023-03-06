@@ -1,5 +1,4 @@
 export interface RadioManufacturer {
-  id?: string;
+  moduleId: string;
   name: string;
-  models: string[];
 }
