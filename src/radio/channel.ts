@@ -5,6 +5,6 @@ export interface RadioChannel {
   name?: string;
   transmitFrequency: number;
   receiveFrequency: number;
-  transmitTone?: RadioTone;
-  receiveTone?: RadioTone;
+  transmitTone: RadioTone;
+  receiveTone: RadioTone;
 }
