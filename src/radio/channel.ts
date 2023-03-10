@@ -1,8 +1,10 @@
+import { RadioTone } from './tone.js';
+
 export interface RadioChannel {
   id?: string;
   name?: string;
   transmitFrequency: number;
   receiveFrequency: number;
-  transmitTone?: number;
-  receiveTone?: number;
+  transmitTone?: RadioTone;
+  receiveTone?: RadioTone;
 }

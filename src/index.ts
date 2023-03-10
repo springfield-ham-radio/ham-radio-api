@@ -10,6 +10,7 @@ export * from './radio/module.js';
 export * from './radio/program.js';
 export * from './radio/programmed-channel.js';
 export * from './radio/progress-indicator.js';
+export * from './radio/tone.js';
 
 export * from './spectrum/band.js';
 export * from './spectrum/channel.js';
