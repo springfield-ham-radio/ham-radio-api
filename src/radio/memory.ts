@@ -1,4 +1,4 @@
 export interface RadioMemory {
-  id: string;
+  radioModelId: string;
   contents: any;
 }
