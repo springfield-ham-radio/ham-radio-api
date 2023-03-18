@@ -5,5 +5,5 @@ import { RadioModel } from './model';
 export interface RadioModule {
   getManufacturer(): RadioManufacturer;
   getModels(filter?: string[]): Promise<RadioModel[]>;
-  getDriver(modelName: string): RadioDriver;
+  getDriver(modelId: string): RadioDriver;
 }
