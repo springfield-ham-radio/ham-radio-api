@@ -1,7 +1,11 @@
+import { RadioMemory } from './memory.js';
 import { RadioProgram } from './program.js';
 import { RadioProgressIndicator } from './progress-indicator.js';
 
 export interface RadioDriver {
-  importFromRadio(path: string, progressIndicator: RadioProgressIndicator): Promise<RadioProgram | undefined>;
-  programRadio(path: string, program: RadioProgram, progressIndicator: RadioProgressIndicator): Promise<void>;
+  readRadio(serialPortPath: string, progressIndicator: RadioProgressIndicator): Promise<RadioMemory>;
+  writeRadio(serialPortPath: string, memory: RadioMemory, progressIndicator: RadioProgressIndicator): Promise<void>;
+
+  decodeMemory(memory: RadioMemory): RadioProgram;
+  encodeProgram(program: RadioProgram, memory: RadioMemory): RadioMemory;
 }

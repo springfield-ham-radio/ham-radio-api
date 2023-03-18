@@ -5,6 +5,7 @@ export * from './radio/channel.js';
 export * from './radio/connection.js';
 export * from './radio/driver.js';
 export * from './radio/manufacturer.js';
+export * from './radio/memory.js';
 export * from './radio/model.js';
 export * from './radio/module.js';
 export * from './radio/program.js';
