@@ -22,7 +22,5 @@ build:
 
 release:
   stage: release
-  only:
-    - tags
   script:
     - yarn release
