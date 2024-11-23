@@ -1,5 +1,5 @@
 default:
-  image: node:22-alpine
+  image: node:22
   before_script:
     - corepack enable
 
@@ -22,5 +22,7 @@ build:
 
 release:
   stage: release
+  before_script:
+    - apt-get update && apt-get install -y git
   script:
     - yarn release
