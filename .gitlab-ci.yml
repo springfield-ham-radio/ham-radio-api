@@ -5,7 +5,7 @@ default:
 
 stages:
   - build
-  - publish
+  - release
 
 cache:
   key: modules
@@ -20,10 +20,9 @@ build:
     - yarn install
     - yarn build
 
-publish:
-  stage: publish
+release:
+  stage: release
   only:
     - tags
   script:
-    - yarn config set npmAuthToken $NPM_AUTH_TOKEN
-    - yarn npm publish --access public
+    - yarn release
