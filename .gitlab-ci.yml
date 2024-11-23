@@ -1,7 +1,5 @@
 default:
   image: node:22
-  before_script:
-    - corepack enable
 
 stages:
   - build
@@ -16,6 +14,8 @@ cache:
 
 build:
   stage: build
+  before_script:
+    - corepack enable
   script:
     - yarn install
     - yarn build
@@ -24,5 +24,6 @@ release:
   stage: release
   before_script:
     - apt-get update && apt-get install -y git
+    - corepack enable
   script:
     - yarn release
