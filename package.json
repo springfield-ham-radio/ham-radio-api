@@ -42,6 +42,9 @@
       "@semantic-release/git"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
