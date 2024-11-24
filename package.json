@@ -37,7 +37,7 @@
         }
       ],
       "@semantic-release/changelog",
-      "@semantic-release-yarn",
+      "semantic-release-yarn",
       "@semantic-release/gitlab",
       "@semantic-release/git"
     ]
