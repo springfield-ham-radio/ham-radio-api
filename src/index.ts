@@ -1,6 +1,7 @@
 export * from './license/class.js';
 
 export * from './radio/channel.js';
+export * from './radio/codec.js';
 export * from './radio/connection.js';
 export * from './radio/driver.js';
 export * from './radio/memory.js';
