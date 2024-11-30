@@ -1,3 +1,10 @@
+## [1.1.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v1.0.1...v1.1.0) (2024-11-30)
+
+
+### Features
+
+* add RadioCodec API ([632a76c](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/632a76c3fd2dca49331b723b826c9d74851f564c))
+
 ## [1.0.1](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v1.0.0...v1.0.1) (2024-11-24)
 
 
