@@ -1,3 +1,14 @@
+## [2.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v1.1.0...v2.0.0) (2024-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* make ESM
+
+### Features
+
+* make ESM ([93049f0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/93049f0b5d11731a42a752660f4b8b6f9f9a947c))
+
 ## [1.1.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v1.0.1...v1.1.0) (2024-11-30)
 
 
