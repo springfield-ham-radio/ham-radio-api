@@ -1,6 +1,6 @@
-import { RadioDriver } from './driver';
-import { RadioModel } from './model';
-import { RadioSchema } from './schema';
+import { RadioDriver } from './driver.js';
+import { RadioModel } from './model.js';
+import { RadioSchema } from './schema.js';
 
 export interface RadioModule {
   getId(): string;

@@ -1,4 +1,4 @@
-import { SpectrumChannel } from './channel';
+import { SpectrumChannel } from './channel.js';
 
 export interface SpectrumBand {
   id?: string;
