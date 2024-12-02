@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.21.4, @babel/code-frame@npm:^7.22.13":
   version: 7.26.2
@@ -30,7 +30,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^19.6.0":
+"@commitlint/cli@npm:19.6.0":
   version: 19.6.0
   resolution: "@commitlint/cli@npm:19.6.0"
   dependencies:
@@ -47,7 +47,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^19.6.0":
+"@commitlint/config-conventional@npm:19.6.0":
   version: 19.6.0
   resolution: "@commitlint/config-conventional@npm:19.6.0"
   dependencies:
@@ -662,7 +662,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/changelog@npm:^6.0.3":
+"@semantic-release/changelog@npm:6.0.3":
   version: 6.0.3
   resolution: "@semantic-release/changelog@npm:6.0.3"
   dependencies:
@@ -707,7 +707,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:^10.0.1":
+"@semantic-release/git@npm:10.0.1":
   version: 10.0.1
   resolution: "@semantic-release/git@npm:10.0.1"
   dependencies:
@@ -751,7 +751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/gitlab@npm:^13.2.1":
+"@semantic-release/gitlab@npm:13.2.1":
   version: 13.2.1
   resolution: "@semantic-release/gitlab@npm:13.2.1"
   dependencies:
@@ -907,14 +907,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@springfield/ham-radio-api@workspace:."
   dependencies:
-    "@commitlint/cli": "npm:^19.6.0"
-    "@commitlint/config-conventional": "npm:^19.6.0"
-    "@semantic-release/changelog": "npm:^6.0.3"
-    "@semantic-release/git": "npm:^10.0.1"
-    "@semantic-release/gitlab": "npm:^13.2.1"
-    husky: "npm:^9.1.7"
+    "@commitlint/cli": "npm:19.6.0"
+    "@commitlint/config-conventional": "npm:19.6.0"
+    "@semantic-release/changelog": "npm:6.0.3"
+    "@semantic-release/git": "npm:10.0.1"
+    "@semantic-release/gitlab": "npm:13.2.1"
+    husky: "npm:9.1.7"
     semantic-release: "npm:23.1.1"
-    semantic-release-yarn: "npm:^3.0.2"
+    semantic-release-yarn: "npm:3.0.2"
     typescript: "npm:5.7.2"
   languageName: unknown
   linkType: soft
@@ -2309,7 +2309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^9.1.7":
+"husky@npm:9.1.7":
   version: 9.1.7
   resolution: "husky@npm:9.1.7"
   bin:
@@ -4387,7 +4387,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-yarn@npm:^3.0.2":
+"semantic-release-yarn@npm:3.0.2":
   version: 3.0.2
   resolution: "semantic-release-yarn@npm:3.0.2"
   dependencies:
