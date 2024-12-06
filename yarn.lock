@@ -751,9 +751,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/gitlab@npm:13.2.1":
-  version: 13.2.1
-  resolution: "@semantic-release/gitlab@npm:13.2.1"
+"@semantic-release/gitlab@npm:13.2.3":
+  version: 13.2.3
+  resolution: "@semantic-release/gitlab@npm:13.2.3"
   dependencies:
     "@semantic-release/error": "npm:^4.0.0"
     aggregate-error: "npm:^5.0.0"
@@ -770,7 +770,7 @@ __metadata:
     url-join: "npm:^4.0.0"
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: 10c0/82dac5f69392568b1685499a2fa5223464a0dc640bc1c4ad190e98cf0c89e6c24ee147e90bdb7198884df2b61e0d68599446c894d8156467845a8589d9956573
+  checksum: 10c0/c0e7b21329255a269873bc23ac9f60bf9a1d97526a9b7f8fee199d0463d0a66a107156973a5f77c3509323fe05eaacee1e3c234386845ac61c9d8bcb25bcece8
   languageName: node
   linkType: hard
 
@@ -911,7 +911,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:19.6.0"
     "@semantic-release/changelog": "npm:6.0.3"
     "@semantic-release/git": "npm:10.0.1"
-    "@semantic-release/gitlab": "npm:13.2.1"
+    "@semantic-release/gitlab": "npm:13.2.3"
     husky: "npm:9.1.7"
     semantic-release: "npm:23.1.1"
     semantic-release-yarn: "npm:3.0.2"
