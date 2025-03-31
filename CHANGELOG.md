@@ -1,3 +1,14 @@
+## [3.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v2.0.0...v3.0.0) (2025-03-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* the RadioConnection should contain model instead of model id
+
+### Features
+
+* the RadioConnection should contain model instead of model id ([d7f8470](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/d7f84709fee55f7e9dd08d582547e6c71887f522))
+
 ## [2.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v1.1.0...v2.0.0) (2024-12-02)
 
 
