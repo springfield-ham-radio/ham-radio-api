@@ -1,3 +1,14 @@
+## [5.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v4.0.0...v5.0.0) (2025-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* id branded types need to be string and not number
+
+### Features
+
+* id branded types need to be string and not number ([3a0b68d](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/3a0b68def4fe84e87ea3dc64a1fa09a8d8143a5c))
+
 ## [4.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v3.0.0...v4.0.0) (2025-04-06)
 
 
