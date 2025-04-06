@@ -1,3 +1,20 @@
+## [4.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v3.0.0...v4.0.0) (2025-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* use branded types
+
+### Features
+
+* use branded types ([c6343cc](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/c6343ccd0baea226226ba2daeec882645d638396))
+
+
+### Bug Fixes
+
+* fix LicenseClassId typo ([2a3b5c6](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/2a3b5c6a9b8c4262bb7ffbbc71f5372c1e5b01fa))
+* fix more LicenseClassId typos ([a49e1a7](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/a49e1a798c3e9d4fab2dbbb9759e76cc0cf400f3))
+
 ## [3.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v2.0.0...v3.0.0) (2025-03-31)
 
 
