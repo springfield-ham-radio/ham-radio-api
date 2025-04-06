@@ -1,3 +1,14 @@
+## [7.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v6.0.0...v7.0.0) (2025-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove radio id from RadioProgram
+
+### Features
+
+* remove radio id from RadioProgram ([6ede16a](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/6ede16a9876b91420db58b08476ca424b21ca30a))
+
 ## [6.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v5.0.0...v6.0.0) (2025-04-06)
 
 
