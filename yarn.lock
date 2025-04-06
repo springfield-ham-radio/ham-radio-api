@@ -915,6 +915,7 @@ __metadata:
     husky: "npm:9.1.7"
     semantic-release: "npm:23.1.1"
     semantic-release-yarn: "npm:3.0.2"
+    ts-brand: "npm:^0.2.0"
     typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
@@ -4947,6 +4948,13 @@ __metadata:
   version: 3.0.0
   resolution: "treeverse@npm:3.0.0"
   checksum: 10c0/286479b9c05a8fb0538ee7d67a5502cea7704f258057c784c9c1118a2f598788b2c0f7a8d89e74648af88af0225b31766acecd78e6060736f09b21dd3fa255db
+  languageName: node
+  linkType: hard
+
+"ts-brand@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "ts-brand@npm:0.2.0"
+  checksum: 10c0/f568af7c613ab24c0e8e362959c9df249e37477b63a143785e8ea378b6c6a2fcfad1ff286af874f02a1692f18157fb289e5fc6ae3a4b069a253eaf4fc5b4ed6d
   languageName: node
   linkType: hard
 

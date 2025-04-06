@@ -1,5 +1,8 @@
+import { RadioId } from '../branded-types/radio-id.js';
+import { RadioModelId } from '../branded-types/radio-model-id.js';
+
 export interface Radio {
-  id: string;
+  id: RadioId;
   name: string;
-  modelId: string;
+  model: RadioModelId;
 }

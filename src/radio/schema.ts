@@ -1,5 +1,7 @@
+import { RadioModelId } from '../branded-types/radio-model-id.js';
+
 export interface RadioSchema {
-  modelId: string;
+  model: RadioModelId;
   settingsSchema: any;
   channelSchema: any;
 }

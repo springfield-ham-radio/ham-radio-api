@@ -1,4 +1,6 @@
+import { SpectrumModeId } from '../branded-types/spectrum-mode-id.js';
+
 export interface SpectrumMode {
-  id?: string;
+  id: SpectrumModeId;
   name: string;
 }

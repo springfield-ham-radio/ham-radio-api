@@ -1,10 +1,12 @@
+import { Frequency } from '../branded-types/frequency.js';
+import { RadioChannelId } from '../branded-types/radio-channel-id.js';
 import { RadioTone } from './tone.js';
 
 export interface RadioChannel {
-  id?: string;
+  id?: RadioChannelId;
   name?: string;
-  transmitFrequency: number;
-  receiveFrequency: number;
+  transmitFrequency: Frequency;
+  receiveFrequency: Frequency;
   transmitTone: RadioTone;
   receiveTone: RadioTone;
 }

@@ -1,13 +1,17 @@
+import { Frequency } from '../branded-types/frequency.js';
+import { licenseClassId } from '../branded-types/license-class-id.js';
+import { SpectrumBandId } from '../branded-types/spectrum-band-id.js';
+import { Wavelength } from '../branded-types/wavelength.js';
 import { SpectrumChannel } from './channel.js';
 
 export interface SpectrumBand {
-  id?: string;
+  id: SpectrumBandId;
   name: string;
-  wavelength: number;
-  lowerFrequency: number;
-  upperFrequency: number;
+  wavelength: Wavelength;
+  lowerFrequency: Frequency;
+  upperFrequency: Frequency;
   frequencyDisplayBaseMultiplier: number;
   frequencyDisplayNumberDecimals: number;
-  privilegeIds: string[];
+  privileges: licenseClassId[];
   channels?: SpectrumChannel[];
 }

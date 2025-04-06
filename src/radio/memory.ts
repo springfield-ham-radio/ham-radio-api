@@ -1,4 +1,6 @@
+import { RadioModelId } from '../branded-types/radio-model-id.js';
+
 export interface RadioMemory {
-  radioModelId: string;
+  radioModel: RadioModelId;
   contents: any;
 }
