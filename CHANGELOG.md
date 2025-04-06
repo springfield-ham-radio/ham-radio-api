@@ -1,3 +1,14 @@
+## [6.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v5.0.0...v6.0.0) (2025-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* better tone enums
+
+### Features
+
+* better tone enums ([56f5760](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/56f5760a1cfe369f6bd9f7b97ef3b2ee167aa314))
+
 ## [5.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v4.0.0...v5.0.0) (2025-04-06)
 
 
