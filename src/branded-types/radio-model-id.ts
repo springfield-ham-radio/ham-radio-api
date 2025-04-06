@@ -1,4 +1,4 @@
 import { Brand, make } from 'ts-brand';
 
-export type RadioModelId = Brand<number, 'radio-model-id'>;
+export type RadioModelId = Brand<string, 'radio-model-id'>;
 export const RadioModelId = make<RadioModelId>();
