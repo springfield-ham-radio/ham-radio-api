@@ -17,15 +17,15 @@ export * from './radio/connection.js';
 export * from './radio/ctcss.js';
 export * from './radio/dcs.js';
 export * from './radio/driver.js';
+export * from './radio/driver-provider.js';
 export * from './radio/memory.js';
 export * from './radio/model.js';
-export * from './radio/module.js';
+export * from './radio/model-provider.js';
 export * from './radio/program.js';
 export * from './radio/programmed-channel.js';
 export * from './radio/progress-indicator.js';
 export * from './radio/schema.js';
 export * from './radio/settings.js';
-export * from './radio/radio.js';
 export * from './radio/tone.js';
 
 export * from './spectrum/band.js';
