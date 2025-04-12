@@ -1,6 +1,6 @@
 {
   "name": "@springfield/ham-radio-api",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "author": "Bryan Hunt",
   "packageManager": "yarn@4.9.0",
   "main": "dist/index.js",

@@ -1,3 +1,14 @@
+## [8.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v7.0.0...v8.0.0) (2025-04-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* update radio interfaces and remove deprecated radio.ts file
+
+### Features
+
+* update radio interfaces and remove deprecated radio.ts file ([9308ea5](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/9308ea59628363c65a240d9d657e7fc3a5325d33))
+
 ## [7.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v6.0.0...v7.0.0) (2025-04-06)
 
 
