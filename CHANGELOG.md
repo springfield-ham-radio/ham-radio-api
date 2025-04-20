@@ -1,3 +1,14 @@
+## [9.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v8.0.0...v9.0.0) (2025-04-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* update RadioModel interface to use properties instead of getter methods
+
+### Features
+
+* update RadioModel interface to use properties instead of getter methods ([fe0c930](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/fe0c930ea6da1be01d0ead7bdc217546954fa04f))
+
 ## [8.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v7.0.0...v8.0.0) (2025-04-12)
 
 
