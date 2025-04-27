@@ -1,3 +1,14 @@
+## [11.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v10.0.0...v11.0.0) (2025-04-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* move radio name and manufacturer to RadioId
+
+### Features
+
+* move radio name and manufacturer to RadioId ([d84b729](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/d84b729366858c3972feee873a0a55661c501e00))
+
 ## [10.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v9.0.0...v10.0.0) (2025-04-27)
 
 
