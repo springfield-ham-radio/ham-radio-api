@@ -1,3 +1,14 @@
+## [10.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v9.0.0...v10.0.0) (2025-04-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* improved Radio API
+
+### Features
+
+* improved Radio API ([7c34422](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/7c34422a8f37ddd01ae6b630eaea5b3d1a815bcb))
+
 ## [9.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v8.0.0...v9.0.0) (2025-04-20)
 
 
