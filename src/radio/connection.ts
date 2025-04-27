@@ -1,6 +1,6 @@
-import { RadioModel } from './model.js';
+import { RadioId } from './id.js';
 
 export interface RadioConnection {
   serialPortPath: string;
-  model: RadioModel;
+  radio: RadioId;
 }
