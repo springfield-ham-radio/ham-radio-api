@@ -1,3 +1,10 @@
+## [12.0.1](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v12.0.0...v12.0.1) (2025-05-10)
+
+
+### Bug Fixes
+
+* export RadioMemorySegment ([105e1af](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/105e1affad6025f04e9d81bcb83e581564d510e7))
+
 ## [12.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v11.0.0...v12.0.0) (2025-05-10)
 
 
