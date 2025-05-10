@@ -1,3 +1,14 @@
+## [12.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v11.0.0...v12.0.0) (2025-05-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* add RadioMemorySegment and make RadioMemory.contents RadioMemorySegment[]
+
+### Features
+
+* add RadioMemorySegment and make RadioMemory.contents RadioMemorySegment[] ([df0b320](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/df0b32045107b3b743e44be648a0096e05b84035))
+
 ## [11.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v10.0.0...v11.0.0) (2025-04-27)
 
 
