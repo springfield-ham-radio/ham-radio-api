@@ -1,5 +1,5 @@
-import { RadioMemory } from './memory.js';
-import { RadioProgressIndicator } from './progress-indicator.js';
+import type { RadioMemory } from './memory.js';
+import type { RadioProgressIndicator } from './progress-indicator.js';
 
 export interface RadioDriver {
   readRadio(serialPortPath: string, progressIndicator: RadioProgressIndicator): Promise<RadioMemory | undefined>;

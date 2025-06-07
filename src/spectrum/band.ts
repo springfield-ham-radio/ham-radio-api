@@ -2,7 +2,7 @@ import { Frequency } from '../branded-types/frequency.js';
 import { LicenseClassId } from '../branded-types/license-class-id.js';
 import { SpectrumBandId } from '../branded-types/spectrum-band-id.js';
 import { Wavelength } from '../branded-types/wavelength.js';
-import { SpectrumChannel } from './channel.js';
+import type { SpectrumChannel } from './channel.js';
 
 export interface SpectrumBand {
   id: SpectrumBandId;

@@ -1,7 +1,7 @@
-import { RadioId } from './id.js';
-import { RadioMemory } from './memory.js';
-import { RadioProgram } from './program.js';
-import { RadioSchema } from './schema.js';
+import type { RadioId } from './id.js';
+import type { RadioMemory } from './memory.js';
+import type { RadioProgram } from './program.js';
+import type { RadioSchema } from './schema.js';
 
 export interface Radio {
   getId(): RadioId;

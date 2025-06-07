@@ -1,5 +1,5 @@
-import { RadioChannel } from './channel.js';
-import { RadioSettings } from './settings.js';
+import type { RadioChannel } from './channel.js';
+import type { RadioSettings } from './settings.js';
 
 export interface RadioProgrammedChannel {
   channelNumber: number;
