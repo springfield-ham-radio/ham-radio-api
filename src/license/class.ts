@@ -1,4 +1,4 @@
-import { LicenseClassId } from '../branded-types/license-class-id.js';
+import type { LicenseClassId } from '../branded-types/license-class-id.js';
 
 export interface LicenseClass {
   id: LicenseClassId;

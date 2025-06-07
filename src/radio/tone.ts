@@ -1,5 +1,5 @@
-import { CTCSS } from './ctcss.js';
-import { DCS } from './dcs.js';
+import type { CTCSS } from './ctcss.js';
+import type { DCS } from './dcs.js';
 
 export enum RadioToneType {
   CTCSS,

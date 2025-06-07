@@ -1,4 +1,4 @@
-import { Frequency } from '../branded-types/frequency.js';
+import type { Frequency } from '../branded-types/frequency.js';
 
 export interface SpectrumChannel {
   name: string;
