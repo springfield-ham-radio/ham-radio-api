@@ -18,6 +18,7 @@ export * from './radio/dcs.js';
 export * from './radio/driver.js';
 export * from './radio/driver-provider.js';
 export * from './radio/id.js';
+export * from './radio/memory-config.js';
 export * from './radio/memory-segment.js';
 export * from './radio/memory.js';
 export * from './radio/radio.js';
