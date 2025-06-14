@@ -1,3 +1,18 @@
+## [13.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v12.0.1...v13.0.0) (2025-06-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* go back to semantic-release 23.1.1
+* force version bump
+* streamline radio memory interfaces and add RadioMemoryConfig
+
+### Features
+
+* force version bump ([e29cb6c](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/e29cb6c4dcc27f73b75b5d3f5184663e89116f4c))
+* go back to semantic-release 23.1.1 ([b17a499](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/b17a499911ffe4765df7397723ac10aa4792d681))
+* streamline radio memory interfaces and add RadioMemoryConfig ([f5c0a88](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/f5c0a885bc38446953bc8c70ea060fbac09ab48e))
+
 ## [12.0.1](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v12.0.0...v12.0.1) (2025-05-10)
 
 
