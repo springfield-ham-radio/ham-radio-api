@@ -1,3 +1,19 @@
+## [15.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v14.0.0...v15.0.0) (2025-06-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* enhance radio interfaces and add new protocol and serial configuration
+
+### Features
+
+* enhance radio interfaces and add new protocol and serial configuration ([ffffac8](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/ffffac87ece50731fc603b2848e4959aa835c561))
+
+
+### Bug Fixes
+
+* update import path for Radio type in module.ts ([96ac2d3](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/96ac2d38e41855640f01c3e184b7a2cd6de2100c))
+
 ## [14.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v13.0.0...v14.0.0) (2025-06-14)
 
 
