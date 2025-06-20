@@ -21,12 +21,14 @@ export * from './radio/id.js';
 export * from './radio/memory-config.js';
 export * from './radio/memory-segment.js';
 export * from './radio/memory.js';
-export * from './radio/radio.js';
 export * from './radio/module.js';
 export * from './radio/program.js';
 export * from './radio/programmed-channel.js';
 export * from './radio/progress-indicator.js';
+export * from './radio/protocol.js';
+export * from './radio/radio.js';
 export * from './radio/schema.js';
+export * from './radio/serial-config.js';
 export * from './radio/settings.js';
 export * from './radio/tone.js';
 

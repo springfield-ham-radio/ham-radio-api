@@ -1,5 +1,4 @@
 import type { RadioModelId } from '../branded-types/radio-model-id.js';
-import type { RadioModuleId } from '../branded-types/radio-module-id.js';
 
 /**
  * A unique identifier for a radio.
@@ -8,7 +7,6 @@ import type { RadioModuleId } from '../branded-types/radio-module-id.js';
  * It must be serializable to JSON.
  */
 export interface RadioId {
-  module: RadioModuleId;
   model: RadioModelId;
   name: string;
   manufacturer: string;
