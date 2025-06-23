@@ -1,3 +1,14 @@
+## [16.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v15.0.0...v16.0.0) (2025-06-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* enhance RadioReceiveStep and Radio interface
+
+### Features
+
+* enhance RadioReceiveStep and Radio interface ([1bb62f2](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/1bb62f2ec7cffc7cc64c27fe1884c0027a0bf9c0))
+
 ## [15.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v14.0.0...v15.0.0) (2025-06-20)
 
 
