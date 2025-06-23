@@ -12,6 +12,7 @@ export * from './license/class.js';
 
 export * from './radio/channel.js';
 export * from './radio/codec.js';
+export * from './radio/codec-factory.js';
 export * from './radio/connection.js';
 export * from './radio/ctcss.js';
 export * from './radio/dcs.js';
@@ -29,8 +30,10 @@ export * from './radio/protocol.js';
 export * from './radio/radio.js';
 export * from './radio/schema.js';
 export * from './radio/serial-config.js';
+export * from './radio/shared-components.js';
 export * from './radio/settings.js';
 export * from './radio/tone.js';
+export * from './radio/validation.js';
 
 export * from './spectrum/band.js';
 export * from './spectrum/channel.js';

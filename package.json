@@ -61,6 +61,7 @@
     "typescript": "5.8.3"
   },
   "dependencies": {
+    "loglayer": "^6.4.3",
     "ts-brand": "^0.2.0"
   }
 }

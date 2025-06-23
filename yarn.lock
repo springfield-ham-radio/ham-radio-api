@@ -251,6 +251,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@loglayer/context-manager@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@loglayer/context-manager@npm:1.1.1"
+  dependencies:
+    "@loglayer/shared": "npm:2.3.1"
+  checksum: 10c0/147fc06153c46de0046ac0874f430ad6dd4b1a5ce968ea8cc861ff205bdd3c51d1ed46ff04b02877b276a54b5fcdf9b9d118a6ec9f555bd2dd2d601e6a94c5a0
+  languageName: node
+  linkType: hard
+
+"@loglayer/plugin@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@loglayer/plugin@npm:2.1.1"
+  dependencies:
+    "@loglayer/shared": "npm:2.3.1"
+  checksum: 10c0/b6960eba93a4dc22dc245cb468c9c6d1197e4bd423a31f30e9ae0e48fff73fe017d0e10e51e3913d2a78e34640b978ec0757288406b2debe61988c6a10ed339e
+  languageName: node
+  linkType: hard
+
+"@loglayer/shared@npm:2.3.1":
+  version: 2.3.1
+  resolution: "@loglayer/shared@npm:2.3.1"
+  checksum: 10c0/a4626245032631ec7a70d027d6e64b1c53908d020c01b92a11f75d7d4ea10d9d0b3be51412d1d7afc9d4e6d5072e877b5a92611f2aaefe2e80fcd6a8cf5b4fa8
+  languageName: node
+  linkType: hard
+
+"@loglayer/transport@npm:2.2.1":
+  version: 2.2.1
+  resolution: "@loglayer/transport@npm:2.2.1"
+  dependencies:
+    "@loglayer/shared": "npm:2.3.1"
+  checksum: 10c0/97de0f5b0f3df5ae19073a3e8d16667efb85c4740e8bf1ce059e4516477f793addcb8cea54ad5d698a130e294c36ddb953afdb23266e9def589b0bcb4cdb5bb5
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -986,6 +1020,7 @@ __metadata:
     "@semantic-release/git": "npm:10.0.1"
     "@semantic-release/gitlab": "npm:13.2.6"
     husky: "npm:9.1.7"
+    loglayer: "npm:^6.4.3"
     oxlint: "npm:1.2.0"
     semantic-release: "npm:23.1.1"
     semantic-release-yarn: "npm:3.0.2"
@@ -3121,6 +3156,18 @@ __metadata:
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
+  languageName: node
+  linkType: hard
+
+"loglayer@npm:^6.4.3":
+  version: 6.4.3
+  resolution: "loglayer@npm:6.4.3"
+  dependencies:
+    "@loglayer/context-manager": "npm:1.1.1"
+    "@loglayer/plugin": "npm:2.1.1"
+    "@loglayer/shared": "npm:2.3.1"
+    "@loglayer/transport": "npm:2.2.1"
+  checksum: 10c0/516bdbdf09581acf8518e6db5905df17f1eeb51f4d5e5aa27dfc9f31fdfbc60426f925c9278702bf038cb00864f03d39d423159a4bdd4423c29f037c880b2dc6
   languageName: node
   linkType: hard
 
