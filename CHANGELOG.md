@@ -1,3 +1,10 @@
+## [16.1.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.0.0...v16.1.0) (2025-06-23)
+
+
+### Features
+
+* add loglayer dependency and enhance radio module exports ([a8e5363](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/a8e5363f6ac40a0c2cb9fb4495d241776400cef9))
+
 ## [16.0.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v15.0.0...v16.0.0) (2025-06-23)
 
 
