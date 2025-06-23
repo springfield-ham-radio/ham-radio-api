@@ -40,8 +40,10 @@ export interface RadioSendStep {
 
 export interface RadioReceiveStep {
   receive: {
-    type: string;
+    type: 'exact' | 'variable' | 'pattern' | 'any';
+    value?: number;
     length: number;
+    pattern?: (string | number | { field: string; size: number })[];
     description?: string;
   };
 }

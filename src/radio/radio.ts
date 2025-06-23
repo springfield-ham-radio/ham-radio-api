@@ -6,6 +6,8 @@ import type { RadioSerialConfig } from './serial-config.js';
 
 export interface Radio {
   id: RadioId;
+  version: string;
+  description: string;
   settingsSchema: RadioSchema;
   memoryConfig: RadioMemoryConfig;
   serialConfig: RadioSerialConfig;
