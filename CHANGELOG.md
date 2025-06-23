@@ -1,3 +1,10 @@
+## [16.1.1](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.1.0...v16.1.1) (2025-06-23)
+
+
+### Bug Fixes
+
+* add new DCS codes D054 and D122 to the DCS enum ([2aff4e1](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/2aff4e1c1dccec2522cb90749b7a64e3a268e383))
+
 ## [16.1.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.0.0...v16.1.0) (2025-06-23)
 
 
