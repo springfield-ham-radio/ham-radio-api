@@ -55,7 +55,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/gitlab": "13.2.6",
     "husky": "9.1.7",
-    "oxlint": "1.5.0",
+    "oxlint": "1.7.0",
     "semantic-release": "23.1.1",
     "semantic-release-yarn": "3.0.2",
     "typescript": "5.8.3"
