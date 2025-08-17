@@ -2,8 +2,8 @@ import type { CTCSS } from './ctcss.js';
 import type { DCS } from './dcs.js';
 
 export enum RadioToneType {
-  CTCSS,
-  DCS,
+  CTCSS = 0,
+  DCS = 1,
 }
 
 export interface RadioTone {
