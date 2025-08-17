@@ -1,26 +1,3 @@
 {
-  "categories": {
-    "correctness": "error",
-    "suspicious": "error",
-    "pedantic": "warn",
-    "style": "warn",
-    "perf": "warn",
-    "restriction": "error",
-    "nursery": "off"
-  },
-  "rules": {
-    "no-magic-numbers": "off",
-    "no-barrel-file": "off",
-    "new-cap": "off"
-  },
-  "ignorePatterns": ["dist/", "node_modules/", "build/", "coverage/", "test/"],
-  "env": {
-    "browser": true,
-    "node": true,
-    "es2022": true
-  },
-  "globals": {
-    "process": "readonly",
-    "__dirname": "readonly"
-  }
+  "plugins": ["import"]
 }
