@@ -12,7 +12,7 @@
     "no-magic-numbers": "off",
     "no-barrel-file": "off"
   },
-  "ignorePatterns": ["dist/", "node_modules/", "build/", "coverage/"],
+  "ignorePatterns": ["dist/", "node_modules/", "build/", "coverage/", "test/"],
   "env": {
     "browser": true,
     "node": true,
