@@ -10,7 +10,8 @@
   },
   "rules": {
     "no-magic-numbers": "off",
-    "no-barrel-file": "off"
+    "no-barrel-file": "off",
+    "new-cap": "off"
   },
   "ignorePatterns": ["dist/", "node_modules/", "build/", "coverage/", "test/"],
   "env": {
