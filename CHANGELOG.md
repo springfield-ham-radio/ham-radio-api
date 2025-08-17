@@ -1,3 +1,10 @@
+## [16.1.3](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.1.2...v16.1.3) (2025-08-17)
+
+
+### Bug Fixes
+
+* simplify .oxlintrc.json configuration and update linting scripts in package.json ([64caf9a](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/64caf9a3e5668ee2d6ec265fc620fb5942432a21))
+
 ## [16.1.2](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.1.1...v16.1.2) (2025-07-11)
 
 
