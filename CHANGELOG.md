@@ -1,3 +1,10 @@
+## [16.3.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.2.0...v16.3.0) (2025-09-13)
+
+
+### Features
+
+* add addressEndianness property to RadioMemoryConfig interface ([88aa089](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/88aa089148681a9a8cac4442716278222dd9ddf0))
+
 ## [16.2.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.1.4...v16.2.0) (2025-09-13)
 
 
