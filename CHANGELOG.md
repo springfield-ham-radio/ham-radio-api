@@ -1,3 +1,10 @@
+## [16.2.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.1.4...v16.2.0) (2025-09-13)
+
+
+### Features
+
+* add optional properties to RadioConnection and RadioMemoryConfig interfaces ([269be54](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/269be5428eaf415115d2e0eaf573b83a86b5c3ec))
+
 ## [16.1.4](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.1.3...v16.1.4) (2025-09-12)
 
 
