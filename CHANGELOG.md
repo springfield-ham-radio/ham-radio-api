@@ -1,3 +1,10 @@
+## [16.3.1](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.3.0...v16.3.1) (2025-10-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency loglayer to ^6.9.1 ([9e95ff2](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/9e95ff2ffd90d93f3b2ed14bf2de4e2eb35a0b36))
+
 ## [16.3.0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.2.0...v16.3.0) (2025-09-13)
 
 
