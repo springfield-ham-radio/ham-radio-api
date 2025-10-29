@@ -1020,7 +1020,7 @@ __metadata:
     "@semantic-release/git": "npm:10.0.1"
     "@semantic-release/gitlab": "npm:13.2.9"
     husky: "npm:9.1.7"
-    loglayer: "npm:^6.9.1"
+    loglayer: "npm:^6.10.0"
     oxlint: "npm:1.15.0"
     semantic-release: "npm:23.1.1"
     semantic-release-yarn: "npm:3.0.2"
@@ -3159,15 +3159,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loglayer@npm:^6.9.1":
-  version: 6.9.1
-  resolution: "loglayer@npm:6.9.1"
+"loglayer@npm:^6.10.0":
+  version: 6.10.0
+  resolution: "loglayer@npm:6.10.0"
   dependencies:
     "@loglayer/context-manager": "npm:1.1.6"
     "@loglayer/plugin": "npm:2.1.6"
     "@loglayer/shared": "npm:2.5.3"
     "@loglayer/transport": "npm:2.3.4"
-  checksum: 10c0/af40a66f7800f036f4e85d8a0a264a8ebcfddbf7ce182414253f880fa563985df05422799e7ada2947b1e609232930fc65d2944386bdb30d3e53304701b83d99
+  checksum: 10c0/04560befa6a399d63466eddc9f6d12af63be139f73775000bbf6a725708caff63b0dc52b23594ed8945dc754f7261b6212d137339153d6b0f4cedc2dff078ff2
   languageName: node
   linkType: hard
 
