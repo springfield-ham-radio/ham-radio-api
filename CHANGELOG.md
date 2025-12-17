@@ -1,3 +1,12 @@
+## <small>16.3.3 (2025-12-17)</small>
+
+* ci: update Node.js version from 22 to 24 ([2d65aaf](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/2d65aaf))
+* fix: update dependencies ([98279fe](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/98279fe))
+* Merge branch 'renovate/oxlint-1.x' into 'main' ([bdabeb1](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/bdabeb1))
+* Merge branch 'renovate/yarn-monorepo' into 'main' ([71996a0](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/71996a0))
+* chore(deps): update dependency oxlint to v1.25.0 ([bcadbcd](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/bcadbcd))
+* chore(deps): update yarn to v4.11.0 ([20fb8e7](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/20fb8e7))
+
 ## [16.3.2](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/compare/v16.3.1...v16.3.2) (2025-10-29)
 
 
