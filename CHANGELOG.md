@@ -1,3 +1,9 @@
+## [17.1.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.0.0...v17.1.0) (2026-08-22)
+
+### Features
+
+* add memory-map DSL types and nested radio settings ([3883e67](https://github.com/springfield-ham-radio/ham-radio-api/commit/3883e67693230ec17c249835c88bb8ec45fe0ac1))
+
 ## [17.0.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v16.3.4...v17.0.0) (2026-08-22)
 
 ### ⚠ BREAKING CHANGES
