@@ -1,3 +1,15 @@
+## [17.0.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v16.3.4...v17.0.0) (2026-08-22)
+
+### ⚠ BREAKING CHANGES
+
+* RadioProtocolStep is now RadioExchange | RadioReadStep | RadioWriteStep. Removed sendReceive, send, receive, readSegment, writeSegment, setVariable, and typed receive patterns in favor of flat send/expect and $placeholders.
+
+Co-authored-by: Cursor <cursoragent@cursor.com>
+
+### Features
+
+* replace protocol DSL types with send/expect exchanges ([9db8ea8](https://github.com/springfield-ham-radio/ham-radio-api/commit/9db8ea8d99023fb260e7dcc7165585dce1224429))
+
 ## [16.3.4](https://github.com/springfield-ham-radio/ham-radio-api/compare/v16.3.3...v16.3.4) (2026-08-22)
 
 ### Bug Fixes
