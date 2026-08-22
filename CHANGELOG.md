@@ -1,3 +1,9 @@
+## [16.3.4](https://github.com/springfield-ham-radio/ham-radio-api/compare/v16.3.3...v16.3.4) (2026-08-22)
+
+### Bug Fixes
+
+* migrate to TypeScript 7 and update dependencies ([fe42ab8](https://github.com/springfield-ham-radio/ham-radio-api/commit/fe42ab89aadee2a45f667dd00d94baec7ba02132))
+
 ## <small>16.3.3 (2025-12-17)</small>
 
 * ci: update Node.js version from 22 to 24 ([2d65aaf](https://gitlab.com/springfield-ham-radio/app/ham-radio-api/commit/2d65aaf))
