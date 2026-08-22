@@ -14,6 +14,14 @@ export type RadioSettingValue = RadioSettingScalar | RadioSettingValue[] | { [ke
 /** UI widget hint for schema-driven forms. */
 export type RadioMemoryMapWidget = "integer" | "select" | "switch" | "text" | "number";
 
+/**
+ * Decoded tone value for UV-5R-style tone words (before RadioTone binding).
+ */
+export type RadioMemoryMapToneValue =
+  | { mode: "none" }
+  | { mode: "ctcss"; value: number }
+  | { mode: "dcs"; code: number; polarity: "N" | "R" };
+
 /** How a field's raw bits/bytes become a setting value. */
 export type RadioMemoryMapValueKind =
   | { kind: "integer"; min?: number; max?: number }
@@ -41,6 +49,31 @@ export type RadioMemoryMapValueKind =
       kind: "bbcd";
       /** Number of packed BCD bytes (Chirp bbcd). */
       length: number;
+    }
+  | {
+      /**
+       * Chirp lbcd: little-endian integer whose hex digits are the decimal
+       * frequency digits (Hz / scale). UV-5R channel freqs use length 4, scale 10.
+       */
+      kind: "lbcd";
+      length: number;
+      /** Multiplier after interpreting hex-as-decimal (default 10 → Hz). */
+      scale?: number;
+    }
+  | {
+      /**
+       * UV-5R-style tone word (typically ul16):
+       * - 0 / 0xFFFF → none
+       * - >= ctcssMin → CTCSS (raw = Hz * 10)
+       * - else DCS index into `values` (1-based); reverseOffset adds R polarity
+       */
+      kind: "tone";
+      /** Ordered DCS codes (Chirp UV5R_DTCS). */
+      values: number[];
+      /** Minimum raw value treated as CTCSS (Chirp uses 0x0258). */
+      ctcssMin?: number;
+      /** Added to DCS index for reverse polarity (Chirp uses 0x69). */
+      reverseOffset?: number;
     };
 
 /** UI metadata for a non-reserved field. */
@@ -55,14 +88,14 @@ export interface RadioMemoryMapFieldUi {
 
 /**
  * One field in a sequential struct.
- * Bitfields pack into the current byte from LSB; width bits are consumed.
+ * Bitfields pack into the current byte MSB-first (Chirp-style).
  */
 export interface RadioMemoryMapField {
   id: string;
   /**
    * Storage type:
    * - u8 / u16: whole bytes (u16 is little-endian, Chirp ul16)
-   * - bits: bitfield of `width` bits within the current byte (LSB-first)
+   * - bits: bitfield of `width` bits within the current byte (MSB-first)
    * - char: ASCII byte (length via value.kind ascii or count)
    */
   type: "u8" | "u16" | "bits" | "char";
@@ -72,6 +105,14 @@ export interface RadioMemoryMapField {
   reserved?: boolean;
   value?: RadioMemoryMapValueKind;
   ui?: RadioMemoryMapFieldUi;
+}
+
+/**
+ * When the first byte of a repeated struct instance equals `equals`,
+ * the slot is treated as empty (Chirp: RX freq first byte 0xFF).
+ */
+export interface RadioMemoryMapEmptyWhen {
+  equals: number;
 }
 
 /**
@@ -85,18 +126,44 @@ export interface RadioMemoryMapStruct {
   fields: RadioMemoryMapField[];
   /**
    * Repeat this struct `count` times with `stride` bytes between entries.
-   * Used for PTT-ID code tables.
+   * Used for channel tables and PTT-ID code tables.
    */
   count?: number;
   stride?: number;
+  /** Occupancy rule for repeated structs (e.g. empty channel slots). */
+  emptyWhen?: RadioMemoryMapEmptyWhen;
+  /**
+   * When encoding, fill missing/null instances with 0xFF for `stride` bytes
+   * (Chirp-like channel clear). Defaults to false.
+   */
+  clearEmpty?: boolean;
 }
 
 /**
- * Complete memory-map definition for a radio model's settings.
+ * Maps decoded struct fields onto portable RadioChannel fields.
+ * Remaining record fields become RadioProgrammedChannel.settings.
+ */
+export interface RadioMemoryMapChannelBindings {
+  /** Struct id of the channel record array. */
+  records: string;
+  /** Optional parallel name table struct id. */
+  names?: string;
+  /** Field id within the names struct (default "name"). */
+  nameField?: string;
+  receiveFrequency: string;
+  transmitFrequency: string;
+  receiveTone: string;
+  transmitTone: string;
+}
+
+/**
+ * Complete memory-map definition for a radio model's settings and channels.
  */
 export interface RadioMemoryMap {
   /** Optional map version for tooling. */
   version?: string;
   description?: string;
   structs: RadioMemoryMapStruct[];
+  /** Optional projection from channel structs into RadioProgram.channels. */
+  channelBindings?: RadioMemoryMapChannelBindings;
 }
