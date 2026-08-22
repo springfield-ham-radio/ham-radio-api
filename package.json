@@ -2,21 +2,41 @@
   "name": "@springfield/ham-radio-api",
   "version": "16.3.3",
   "author": "Bryan Hunt",
-  "packageManager": "yarn@4.12.0",
-  "main": "dist/index.js",
-  "type": "module",
-  "types": "dist/index.d.ts",
   "files": [
-    "src/",
-    "dist/"
+    "dist/",
+    "src/"
   ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "commitlint": "commitlint --edit",
+    "format": "oxfmt",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix --fix-suggestions",
     "release": "semantic-release",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "loglayer": "^8.5.0",
+    "ts-brand": "^0.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.2",
+    "@commitlint/config-conventional": "21.2.2",
+    "@semantic-release/changelog": "7.0.0",
+    "@semantic-release/git": "11.0.1",
+    "@semantic-release/gitlab": "13.3.3",
+    "husky": "9.1.7",
+    "oxfmt": "^0.64.0",
+    "oxlint": "1.79.0",
+    "semantic-release": "25.0.9",
+    "semantic-release-yarn": "3.0.2",
+    "typescript": "7.0.2"
   },
   "release": {
     "branches": [
@@ -45,23 +65,5 @@
       "@semantic-release/git"
     ]
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "20.2.0",
-    "@commitlint/config-conventional": "20.2.0",
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/gitlab": "13.2.9",
-    "husky": "9.1.7",
-    "oxlint": "1.33.0",
-    "semantic-release": "25.0.2",
-    "semantic-release-yarn": "3.0.2",
-    "typescript": "5.9.3"
-  },
-  "dependencies": {
-    "loglayer": "^8.2.0",
-    "ts-brand": "^0.2.0"
-  }
+  "packageManager": "yarn@4.18.0"
 }

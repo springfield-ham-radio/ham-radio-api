@@ -1,4 +1,4 @@
-import type { RadioModelId } from '../branded-types/radio-model-id.js';
+import type { RadioModelId } from "../branded-types/radio-model-id.js";
 
 /**
  * A unique identifier for a radio.

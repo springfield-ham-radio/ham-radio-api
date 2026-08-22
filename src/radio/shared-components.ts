@@ -1,5 +1,5 @@
 // oxlint-disable consistent-indexed-object-style
-import type { RadioCodec } from './codec.js';
+import type { RadioCodec } from "./codec.js";
 
 /**
  * Interface for managing shared components across radio models

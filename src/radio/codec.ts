@@ -1,5 +1,5 @@
-import type { RadioMemory } from './memory.js';
-import type { RadioProgram } from './program.js';
+import type { RadioMemory } from "./memory.js";
+import type { RadioProgram } from "./program.js";
 
 export interface RadioCodec {
   decode(memory: RadioMemory): RadioProgram;

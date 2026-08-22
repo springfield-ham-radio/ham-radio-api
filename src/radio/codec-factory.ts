@@ -1,7 +1,7 @@
 // oxlint-disable consistent-indexed-object-style
-import type { ILogLayer } from 'loglayer';
-import type { RadioCodec } from './codec.js';
-import type { RadioModelId } from '../branded-types/radio-model-id.js';
+import type { ILogLayer } from "loglayer";
+import type { RadioCodec } from "./codec.js";
+import type { RadioModelId } from "../branded-types/radio-model-id.js";
 
 /**
  * Factory interface for creating radio codecs

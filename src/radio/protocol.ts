@@ -1,22 +1,22 @@
 export interface RadioExactReceivePattern {
-  type: 'exact';
+  type: "exact";
   value: number;
   length: number;
 }
 
 export interface RadioVariableReceivePattern {
-  type: 'variable';
+  type: "variable";
   length: number;
 }
 
 export interface RadioPatternReceivePattern {
-  type: 'pattern';
+  type: "pattern";
   pattern: (string | number | { field: string; size: number })[];
   dataLength?: number | string; // Optional - actual length determined by segment configuration
 }
 
 export interface RadioAnyReceivePattern {
-  type: 'any';
+  type: "any";
   length: number;
 }
 
@@ -40,7 +40,7 @@ export interface RadioSendStep {
 
 export interface RadioReceiveStep {
   receive: {
-    type: 'exact' | 'variable' | 'pattern' | 'any';
+    type: "exact" | "variable" | "pattern" | "any";
     value?: number;
     length: number;
     pattern?: (string | number | { field: string; size: number })[];
