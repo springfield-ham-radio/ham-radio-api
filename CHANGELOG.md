@@ -1,3 +1,9 @@
+## [17.2.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.1.0...v17.2.0) (2026-08-22)
+
+### Features
+
+* extend memory-map DSL for channels (lbcd, tone, bindings) ([e26f31b](https://github.com/springfield-ham-radio/ham-radio-api/commit/e26f31bed089a7a72668e2cde8599f234618c1af))
+
 ## [17.1.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.0.0...v17.1.0) (2026-08-22)
 
 ### Features
