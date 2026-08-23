@@ -1,3 +1,9 @@
+## [17.3.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.2.0...v17.3.0) (2026-08-23)
+
+### Features
+
+* add write chunkSize, delay, and skip to the protocol DSL ([da6eea7](https://github.com/springfield-ham-radio/ham-radio-api/commit/da6eea7fa0541bc4c9929d39a983a4950c4d1460))
+
 ## [17.2.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.1.0...v17.2.0) (2026-08-22)
 
 ### Features
