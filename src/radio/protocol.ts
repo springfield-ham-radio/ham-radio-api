@@ -1,3 +1,5 @@
+import type { RadioMemorySegment } from "./memory-segment.js";
+
 /**
  * A byte in a send or expect array.
  *
@@ -61,6 +63,10 @@ export interface RadioReadStep {
 /**
  * Chunked memory write: repeat an exchange across named segments.
  * `$data` in `send` emits the current chunk from the memory buffer.
+ *
+ * Optional `chunkSize` overrides `memoryConfig.chunkSize` (UV-5R clone writes 16-byte blocks).
+ * Optional `delay` is milliseconds to wait after each accepted block (UV-5R clone waits 50ms).
+ * Optional `skip` lists inclusive radio-address ranges that must not be uploaded.
  */
 export interface RadioWriteStep {
   description?: string;
@@ -69,6 +75,9 @@ export interface RadioWriteStep {
     send: RadioByteToken[];
     expect: RadioExpect;
     timeout?: number;
+    chunkSize?: number;
+    delay?: number;
+    skip?: RadioMemorySegment[];
   };
 }
 
