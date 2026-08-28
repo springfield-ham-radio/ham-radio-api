@@ -27,7 +27,12 @@ export type RadioMemoryMapValueKind =
   | { kind: "integer"; min?: number; max?: number }
   | { kind: "boolean" }
   | { kind: "enum"; values: string[] }
-  | { kind: "ascii"; length: number }
+  | {
+      kind: "ascii";
+      length: number;
+      /** Fill byte for unused character slots (default 0xFF). Kenwood names use 0. */
+      pad?: number;
+    }
   | {
       kind: "digits";
       /** Number of decimal digit bytes. */
@@ -74,6 +79,22 @@ export type RadioMemoryMapValueKind =
       ctcssMin?: number;
       /** Added to DCS index for reverse polarity (Chirp uses 0x69). */
       reverseOffset?: number;
+    }
+  | {
+      /**
+       * CTCSS tone stored as an index into `values` (Hz * 10, Springfield tenths).
+       * Kenwood TH-D74 `rtone` / `ctone` use Chirp TONES order.
+       */
+      kind: "ctcss-index";
+      values: number[];
+    }
+  | {
+      /**
+       * DCS code stored as an index into `values`.
+       * Kenwood TH-D74 `dtcs_code` uses Chirp DTCS_CODES order.
+       */
+      kind: "dcs-index";
+      values: number[];
     };
 
 /** UI metadata for a non-reserved field. */
@@ -94,11 +115,11 @@ export interface RadioMemoryMapField {
   id: string;
   /**
    * Storage type:
-   * - u8 / u16: whole bytes (u16 is little-endian, Chirp ul16)
+   * - u8 / u16 / u32: whole bytes (u16/u32 are little-endian, Chirp ul16/ul32)
    * - bits: bitfield of `width` bits within the current byte (MSB-first)
    * - char: ASCII byte (length via value.kind ascii or count)
    */
-  type: "u8" | "u16" | "bits" | "char";
+  type: "u8" | "u16" | "u32" | "bits" | "char";
   /** Bit width when type is bits. */
   width?: number;
   /** When true, skip decode/encode for this padding field. */
@@ -130,6 +151,13 @@ export interface RadioMemoryMapStruct {
    */
   count?: number;
   stride?: number;
+  /**
+   * When set with `groupPad`, instances are packed into groups of `groupSize`
+   * records followed by `groupPad` padding bytes (Kenwood TH-D74: 6 × 40 + 16).
+   */
+  groupSize?: number;
+  /** Padding bytes after each group of `groupSize` records. */
+  groupPad?: number;
   /** Occupancy rule for repeated structs (e.g. empty channel slots). */
   emptyWhen?: RadioMemoryMapEmptyWhen;
   /**
@@ -154,6 +182,12 @@ export interface RadioMemoryMapChannelBindings {
   transmitFrequency: string;
   receiveTone: string;
   transmitTone: string;
+  /**
+   * Optional parallel struct whose fields merge into each channel's settings
+   * (Kenwood TH-D74 flags: used, lockout, group). Occupancy `emptyWhen` on
+   * this struct, when present, also skips the channel.
+   */
+  extras?: string;
 }
 
 /**

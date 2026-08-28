@@ -6,7 +6,7 @@ import type { RadioMemorySegment } from "./memory-segment.js";
  * - number 0–255: literal byte
  * - hex string such as `"0x50"`: literal byte
  * - single-character string such as `"S"`: ASCII opcode
- * - placeholder: `"$address"`, `"$chunkSize"`, `"$length"`, `"$data"`
+ * - placeholder: `"$address"`, `"$block"`, `"$chunkSize"`, `"$length"`, `"$data"`
  */
 export type RadioByteToken = number | string;
 
@@ -27,22 +27,20 @@ export interface RadioExpectBytes {
 export type RadioExpect = RadioByteToken | RadioByteToken[] | RadioExpectBytes;
 
 /**
- * One serial exchange: send bytes and/or wait for a reply.
- * At least one of `send` or `expect` must be present.
+ * One serial exchange: send bytes and/or wait for a reply, and/or change baud.
+ * At least one of `send`, `expect`, or `setBaudRate` must be present.
  */
-export type RadioExchange =
-  | {
-      description?: string;
-      send: RadioByteToken[];
-      expect?: RadioExpect;
-      timeout?: number;
-    }
-  | {
-      description?: string;
-      send?: RadioByteToken[];
-      expect: RadioExpect;
-      timeout?: number;
-    };
+export interface RadioExchange {
+  description?: string;
+  send?: RadioByteToken[];
+  expect?: RadioExpect;
+  timeout?: number;
+  /**
+   * Switch the serial baud rate before send/expect. TH-D74 clone mode
+   * enters programming at 9600 then transfers at 57600.
+   */
+  setBaudRate?: number;
+}
 
 /**
  * Chunked memory read: repeat an exchange across named segments.
