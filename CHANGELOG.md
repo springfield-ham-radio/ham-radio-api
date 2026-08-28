@@ -1,3 +1,9 @@
+## [17.4.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.3.0...v17.4.0) (2026-08-28)
+
+### Features
+
+* add Kenwood clone types to the memory-map and protocol DSLs ([4ab90cb](https://github.com/springfield-ham-radio/ham-radio-api/commit/4ab90cb30f5708d0a67271520b68060162adb57d))
+
 ## [17.3.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.2.0...v17.3.0) (2026-08-23)
 
 ### Features
