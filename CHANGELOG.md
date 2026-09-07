@@ -1,3 +1,9 @@
+## [17.5.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.4.0...v17.5.0) (2026-09-07)
+
+### Features
+
+* add live CAT memory steps and serial RTS/DTR ([a7e83f8](https://github.com/springfield-ham-radio/ham-radio-api/commit/a7e83f87b38fed2d62a139073310952667451e9b))
+
 ## [17.4.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.3.0...v17.4.0) (2026-08-28)
 
 ### Features
