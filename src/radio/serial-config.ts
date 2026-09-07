@@ -7,4 +7,12 @@ export interface RadioSerialConfig {
    * Hardware RTS/CTS flow control. Kenwood TH-D74 clone mode needs this on macOS.
    */
   rtscts?: boolean;
+  /**
+   * Explicit RTS line. TH-F6 live CAT needs this false; omit to keep RTS asserted.
+   */
+  rts?: boolean;
+  /**
+   * Explicit DTR line. Omit to keep DTR asserted after open.
+   */
+  dtr?: boolean;
 }

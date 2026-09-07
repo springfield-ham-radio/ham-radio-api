@@ -18,13 +18,41 @@ export interface RadioExpectBytes {
 }
 
 /**
+ * Read until a delimiter byte. Used for Kenwood live CAT lines ending in CR.
+ */
+export interface RadioExpectUntil {
+  until: RadioByteToken;
+}
+
+/**
  * Expected serial reply for an exchange.
  *
  * - token: exact 1-byte match (ACK)
  * - token array: exact multi-byte match, or a framed reply with `$` placeholders
  * - `{ bytes: N }`: any N bytes
+ * - `{ until: token }`: variable-length reply ending at the delimiter (the delimiter is not included)
  */
-export type RadioExpect = RadioByteToken | RadioByteToken[] | RadioExpectBytes;
+export type RadioExpect = RadioByteToken | RadioByteToken[] | RadioExpectBytes | RadioExpectUntil;
+
+/**
+ * Packer that converts live CAT replies into a logical memory-map record.
+ * `kenwood-th-f6` parses `MR`/`MNA` CSV into the 32-byte TH-F6 channel image.
+ */
+export type RadioCatPack = "kenwood-th-f6";
+
+/**
+ * Live CAT memory loop: one logical record per channel index, not clone blocks.
+ */
+export interface RadioCatMemoryConfig {
+  segment: string;
+  count: number;
+  recordSize: number;
+  pack: RadioCatPack;
+  indexWidth?: number;
+  emptyByte?: number;
+  timeout?: number;
+  interCommandDelayMs?: number;
+}
 
 /**
  * One serial exchange: send bytes and/or wait for a reply, and/or change baud.
@@ -35,6 +63,10 @@ export interface RadioExchange {
   send?: RadioByteToken[];
   expect?: RadioExpect;
   timeout?: number;
+  /**
+   * Milliseconds to wait after send (Kenwood CAT wake CR before ID).
+   */
+  delay?: number;
   /**
    * Switch the serial baud rate before send/expect. TH-D74 clone mode
    * enters programming at 9600 then transfers at 57600.
@@ -79,4 +111,20 @@ export interface RadioWriteStep {
   };
 }
 
-export type RadioProtocolStep = RadioExchange | RadioReadStep | RadioWriteStep;
+/**
+ * Read memories with live CAT commands (Kenwood TH-F6 `MR`/`MNA`).
+ */
+export interface RadioCatReadStep {
+  description?: string;
+  catRead: RadioCatMemoryConfig;
+}
+
+/**
+ * Write memories with live CAT commands (Kenwood TH-F6 `MW`/`MNA`).
+ */
+export interface RadioCatWriteStep {
+  description?: string;
+  catWrite: RadioCatMemoryConfig;
+}
+
+export type RadioProtocolStep = RadioExchange | RadioReadStep | RadioWriteStep | RadioCatReadStep | RadioCatWriteStep;
