@@ -1,3 +1,9 @@
+## [17.6.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.5.0...v17.6.0) (2026-09-11)
+
+### Features
+
+* add serialConfig baudRates for programming port selection ([55c0b23](https://github.com/springfield-ham-radio/ham-radio-api/commit/55c0b2375a1788a886c28b3788895541abe1b2b8))
+
 ## [17.5.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.4.0...v17.5.0) (2026-09-07)
 
 ### Features
