@@ -1,3 +1,9 @@
+## [17.8.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.7.0...v17.8.0) (2026-09-13)
+
+### Features
+
+* add optional memory-map ui.order for settings display ([594c084](https://github.com/springfield-ham-radio/ham-radio-api/commit/594c0847a89043a5438a68249db0ad938a056d73))
+
 ## [17.7.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.6.0...v17.7.0) (2026-09-13)
 
 ### Features
