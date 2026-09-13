@@ -139,6 +139,8 @@ export interface RadioMemoryMapFieldUi {
   description?: string;
   /** Defaults to true. Set false for firmware / read-only messages. */
   writable?: boolean;
+  /** Optional display rank in the settings panel. Lower values come first. EEPROM layout is unchanged. */
+  order?: number;
 }
 
 /**
