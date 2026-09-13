@@ -1,3 +1,9 @@
+## [17.7.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.6.0...v17.7.0) (2026-09-13)
+
+### Features
+
+* add memory-map setting groups and sub-groups ([7d67cc3](https://github.com/springfield-ham-radio/ham-radio-api/commit/7d67cc3be4143dab67fe2e2d88e5541164d0de4a))
+
 ## [17.6.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.5.0...v17.6.0) (2026-09-11)
 
 ### Features
