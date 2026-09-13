@@ -97,9 +97,43 @@ export type RadioMemoryMapValueKind =
       values: number[];
     };
 
+/** Warning banner shown at the top of a settings group in the UI. */
+export interface RadioMemoryMapGroupWarning {
+  title: string;
+  description: string;
+}
+
+/**
+ * Panel section inside a left-nav settings group.
+ * Field `ui.subgroup` references `id`. Declaration order is display order.
+ */
+export interface RadioMemoryMapSubgroup {
+  id: string;
+  label: string;
+  description?: string;
+}
+
+/**
+ * Named UI group for radio-wide settings (left navigation).
+ * Field `ui.group` references `id`. Declaration order is display order.
+ */
+export interface RadioMemoryMapGroup {
+  id: string;
+  label: string;
+  description?: string;
+  /** Iconify icon name (for example `i-lucide-sliders-horizontal`). */
+  icon?: string;
+  warning?: RadioMemoryMapGroupWarning;
+  /** Optional sections shown inside this group in the settings panel. */
+  groups?: RadioMemoryMapSubgroup[];
+}
+
 /** UI metadata for a non-reserved field. */
 export interface RadioMemoryMapFieldUi {
+  /** Settings group id. Matches {@link RadioMemoryMapGroup.id} when groups are declared. */
   group: string;
+  /** Optional panel section id. Matches {@link RadioMemoryMapSubgroup.id} on the parent group. */
+  subgroup?: string;
   label: string;
   widget: RadioMemoryMapWidget;
   description?: string;
@@ -197,6 +231,12 @@ export interface RadioMemoryMap {
   /** Optional map version for tooling. */
   version?: string;
   description?: string;
+  /**
+   * Named settings groups for schema-driven forms.
+   * Top-level groups are the Settings left nav. Nested `groups` are panel sections.
+   * Fields with `ui.group` matching a group `id` are shown together; unused groups are omitted.
+   */
+  groups?: RadioMemoryMapGroup[];
   structs: RadioMemoryMapStruct[];
   /** Optional projection from channel structs into RadioProgram.channels. */
   channelBindings?: RadioMemoryMapChannelBindings;
