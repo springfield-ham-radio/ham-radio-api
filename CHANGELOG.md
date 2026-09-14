@@ -1,3 +1,9 @@
+## [17.9.3](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.2...v17.9.3) (2026-09-14)
+
+### Bug Fixes
+
+* update nested brace-expansion to 2.1.4 ([55005b8](https://github.com/springfield-ham-radio/ham-radio-api/commit/55005b8ee7a0ae331b2d31598c70226417fd7372))
+
 ## [17.9.2](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.1...v17.9.2) (2026-09-14)
 
 ### Bug Fixes
