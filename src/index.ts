@@ -40,3 +40,8 @@ export * from "./spectrum/band.js";
 export * from "./spectrum/channel.js";
 export * from "./spectrum/mode.js";
 export * from "./spectrum/privilege.js";
+
+export * from "./antenna/type.js";
+
+export * from "./station/radio-station.js";
+export * from "./station/antenna.js";

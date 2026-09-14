@@ -18,6 +18,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "test": "node --experimental-strip-types --test test/unit/*.test.ts",
     "commitlint": "commitlint --edit",
     "format": "oxfmt",
     "lint": "oxlint",
