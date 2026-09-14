@@ -1,3 +1,9 @@
+## [17.9.1](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.0...v17.9.1) (2026-09-14)
+
+### Bug Fixes
+
+* update loglayer to 9.4.0 and nested yaml/uri parser patches ([09f02ef](https://github.com/springfield-ham-radio/ham-radio-api/commit/09f02eff6cb8a0097de6be4f46ced724f6e1b3b6))
+
 ## [17.9.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.8.0...v17.9.0) (2026-09-14)
 
 ### Features
