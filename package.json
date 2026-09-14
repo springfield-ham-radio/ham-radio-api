@@ -27,7 +27,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "loglayer": "^8.5.0",
+    "loglayer": "^9.4.0",
     "ts-brand": "^0.2.0"
   },
   "devDependencies": {

@@ -384,46 +384,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@loglayer/context-manager@npm:1.2.0":
-  version: 1.2.0
-  resolution: "@loglayer/context-manager@npm:1.2.0"
+"@loglayer/context-manager@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@loglayer/context-manager@npm:2.3.0"
   dependencies:
-    "@loglayer/shared": "npm:3.3.0"
-  checksum: 10c0/ed2358a073db911af302d6a5ddd52ca773d97c2a0a25135408fa9361dc53fd7eae3d1e78120e50af50a0382bee0f8dbcf92a2e6fe493e4243aa17512aabe3569
+    "@loglayer/shared": "npm:4.4.0"
+  checksum: 10c0/2a7f0bab5c0911e5ee358d6999957d8fe0280d4b2f501de14637186beac535e1609f4631b1ef7d05e4df7edbf3da64b1176f61c08904f9bb660f30e77474f290
   languageName: node
   linkType: hard
 
-"@loglayer/log-level-manager@npm:1.0.5":
-  version: 1.0.5
-  resolution: "@loglayer/log-level-manager@npm:1.0.5"
+"@loglayer/log-level-manager@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@loglayer/log-level-manager@npm:2.3.0"
   dependencies:
-    "@loglayer/shared": "npm:3.3.0"
-  checksum: 10c0/63fd0366981cc99b8d92cc58721cdf4473b40f7083d6573c8d96c4e1d9bd3bcfb76cbd3c8c38402b092827758f37c36acd897596fc4f8d51e673527612946ff5
+    "@loglayer/shared": "npm:4.4.0"
+  checksum: 10c0/598b51c8eca83d3a0afa94465b689e2d2b7026070be41ad3bbeba0b11fc917239176e02d3946092ca5673e30d848b0f1d9f8a88224d756cded7bc010edbaa6e7
   languageName: node
   linkType: hard
 
-"@loglayer/plugin@npm:2.2.7":
-  version: 2.2.7
-  resolution: "@loglayer/plugin@npm:2.2.7"
-  dependencies:
-    "@loglayer/shared": "npm:3.3.0"
-  checksum: 10c0/d22dbb8b4df5da8bc7886abbaf56829a56967f43ff7d633591f33591f61470de143ec2f7dd3ba460726922682d824410e0a82c1cc046265b49d13752979f5eb4
-  languageName: node
-  linkType: hard
-
-"@loglayer/shared@npm:3.3.0":
+"@loglayer/plugin@npm:3.3.0":
   version: 3.3.0
-  resolution: "@loglayer/shared@npm:3.3.0"
-  checksum: 10c0/53193a7db1937ce5fe2b6e4882ebade36fc5091386ec2db358672e9ecfba54a0141d955280675b39deed2f8f4a7b7346dd5c9628a8a7f90358b3bbb1cba80f3c
+  resolution: "@loglayer/plugin@npm:3.3.0"
+  dependencies:
+    "@loglayer/shared": "npm:4.4.0"
+  checksum: 10c0/dca7226ec6a9570b31d5d43cfdf03f82ba557095a94102b91b9e07e3bef6364ac47c3065fb4dc2e6db874f789113771ef6a0d2939bec0b8669bf53bbd589a4a4
   languageName: node
   linkType: hard
 
-"@loglayer/transport@npm:2.3.13":
-  version: 2.3.13
-  resolution: "@loglayer/transport@npm:2.3.13"
+"@loglayer/shared@npm:4.4.0":
+  version: 4.4.0
+  resolution: "@loglayer/shared@npm:4.4.0"
+  checksum: 10c0/c824a4adb76d627a19a4d32fa3da16130374e4a67668a266d629279b9b6243de9bb9849cdcd5528cf7de9a67b0df67ced53cbb23eb46dfc21ae5cb4c716470e6
+  languageName: node
+  linkType: hard
+
+"@loglayer/transport@npm:3.3.0":
+  version: 3.3.0
+  resolution: "@loglayer/transport@npm:3.3.0"
   dependencies:
-    "@loglayer/shared": "npm:3.3.0"
-  checksum: 10c0/71aac78e852cfd3cc383cbe3f093de14679858f24d181cdedcc53531cd2ecf07f4e639c0a32d8712370d8f92f4663a19f257cc7c48b9cc8d84ee4902b2258fbd
+    "@loglayer/shared": "npm:4.4.0"
+  checksum: 10c0/8360f0127e87b1b533cedd75d0deefb22a49ef646907f387e92a05a6ae54c95dcd88b9c8e4700887694564c93f21fe9b25b3d531a91d2da380cf16d0ed974dc6
   languageName: node
   linkType: hard
 
@@ -1332,7 +1332,7 @@ __metadata:
     "@semantic-release/github": "npm:12.0.9"
     "@semantic-release/npm": "npm:13.1.5"
     husky: "npm:9.1.7"
-    loglayer: "npm:^8.5.0"
+    loglayer: "npm:^9.4.0"
     oxfmt: "npm:^0.67.0"
     oxlint: "npm:1.82.0"
     semantic-release: "npm:25.0.9"
@@ -2381,9 +2381,9 @@ __metadata:
   linkType: hard
 
 "fast-uri@npm:^3.0.1":
-  version: 3.0.3
-  resolution: "fast-uri@npm:3.0.3"
-  checksum: 10c0/4b2c5ce681a062425eae4f15cdc8fc151fd310b2f69b1f96680677820a8b49c3cd6e80661a406e19d50f0c40a3f8bffdd458791baf66f4a879d80be28e10a320
+  version: 3.1.7
+  resolution: "fast-uri@npm:3.1.7"
+  checksum: 10c0/ca2baa4bde48fc7322bdc692c6636975943ebe4f6dd97e07d70b14e0ab85af2ff30de90f550f5ec2956684fe208e150d85d6cb5f3c74438c8ac1bf86bd435c13
   languageName: node
   linkType: hard
 
@@ -3037,13 +3037,13 @@ __metadata:
   linkType: hard
 
 "js-yaml@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "js-yaml@npm:4.1.0"
+  version: 4.3.2
+  resolution: "js-yaml@npm:4.3.2"
   dependencies:
     argparse: "npm:^2.0.1"
   bin:
     js-yaml: bin/js-yaml.js
-  checksum: 10c0/184a24b4eaacfce40ad9074c64fd42ac83cf74d8c8cd137718d456ced75051229e5061b8633c3366b8aada17945a7a356b337828c19da92b51ae62126575018f
+  checksum: 10c0/dedd34c2e8fef1d504687f1bc94ed0ee1311a1f78770fa2800352c6d59c635ccf555009d74e9afe529ae62199da2b1ccef30e53dc84dcd8d2d8187c22574bc97
   languageName: node
   linkType: hard
 
@@ -3319,16 +3319,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loglayer@npm:^8.5.0":
-  version: 8.5.0
-  resolution: "loglayer@npm:8.5.0"
+"loglayer@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "loglayer@npm:9.4.0"
   dependencies:
-    "@loglayer/context-manager": "npm:1.2.0"
-    "@loglayer/log-level-manager": "npm:1.0.5"
-    "@loglayer/plugin": "npm:2.2.7"
-    "@loglayer/shared": "npm:3.3.0"
-    "@loglayer/transport": "npm:2.3.13"
-  checksum: 10c0/6a577a4b784a60b3b37fcef8a21c0ec156449030fa7d8620caab74df20a3e5cfe6bdfbdcd196aa9982275b20b9bd9480a29549566778da153a92ab0a71d814da
+    "@loglayer/context-manager": "npm:2.3.0"
+    "@loglayer/log-level-manager": "npm:2.3.0"
+    "@loglayer/plugin": "npm:3.3.0"
+    "@loglayer/shared": "npm:4.4.0"
+    "@loglayer/transport": "npm:3.3.0"
+  checksum: 10c0/5e878de68fa9037def88ce546f676db24e70bf24b67c7b4cdc5320d2f6103bb752a900a0897572854ed2ea79dec9e856160a02ba5d79a93eebc852c15f3a82d6
   languageName: node
   linkType: hard
 
@@ -4324,12 +4324,12 @@ __metadata:
   linkType: hard
 
 "postcss-selector-parser@npm:^7.0.0":
-  version: 7.1.1
-  resolution: "postcss-selector-parser@npm:7.1.1"
+  version: 7.1.6
+  resolution: "postcss-selector-parser@npm:7.1.6"
   dependencies:
     cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
-  checksum: 10c0/02d3b1589ddcddceed4b583b098b95a7266dacd5135f041e5d913ebb48e874fd333a36e564cc9a2ec426a464cb18db11cb192ac76247aced5eba8c951bf59507
+  checksum: 10c0/fc8279859896b96ef25b24d0289b2bfff7bce6647b247aa983939ff872e226663788d1ea57bddf9d1695119c071e5cdcb8b2a364ed4313502efe4b0319879154
   languageName: node
   linkType: hard
 
