@@ -1,3 +1,9 @@
+## [17.9.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.8.0...v17.9.0) (2026-09-14)
+
+### Features
+
+* add station and antenna types ([252933f](https://github.com/springfield-ham-radio/ham-radio-api/commit/252933f9415253b0b4e5d04d839581eede484b19))
+
 ## [17.8.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.7.0...v17.8.0) (2026-09-13)
 
 ### Features
