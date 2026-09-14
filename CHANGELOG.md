@@ -1,3 +1,9 @@
+## [17.9.2](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.1...v17.9.2) (2026-09-14)
+
+### Bug Fixes
+
+* update nested tar to 7.5.22 ([0660c04](https://github.com/springfield-ham-radio/ham-radio-api/commit/0660c04fc92ab892573f7de2ce4a537c83ed57e0))
+
 ## [17.9.1](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.0...v17.9.1) (2026-09-14)
 
 ### Bug Fixes
