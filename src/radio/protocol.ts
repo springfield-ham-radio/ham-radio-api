@@ -78,6 +78,8 @@ export interface RadioExchange {
  * Chunked memory read: repeat an exchange across named segments.
  * `$data` in `expect` is captured into the memory buffer.
  * Optional `ack` is a second exchange after each chunk (for example an ACK).
+ * Optional `delay` is milliseconds to wait after each accepted chunk (Kenwood
+ * TM-D710A clone at 57600 needs this so the next `R` does not outrun the radio).
  */
 export interface RadioReadStep {
   description?: string;
@@ -87,6 +89,7 @@ export interface RadioReadStep {
     expect: RadioExpect;
     ack?: RadioExchange;
     timeout?: number;
+    delay?: number;
   };
 }
 
