@@ -1,3 +1,9 @@
+## [17.10.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.3...v17.10.0) (2026-09-15)
+
+### Features
+
+* allow delay on chunked memory read steps ([47b0b0e](https://github.com/springfield-ham-radio/ham-radio-api/commit/47b0b0e120b1a80a5e65f9993de915b5a830a136))
+
 ## [17.9.3](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.2...v17.9.3) (2026-09-14)
 
 ### Bug Fixes
