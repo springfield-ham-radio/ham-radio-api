@@ -24,7 +24,7 @@
     "lint": "oxlint",
     "lint:fix": "oxlint --fix --fix-suggestions",
     "release": "semantic-release",
-    "prepare": "husky"
+    "prepare": "husky && yarn build"
   },
   "dependencies": {
     "loglayer": "^9.4.0",
