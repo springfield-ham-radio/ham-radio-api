@@ -128,6 +128,14 @@ export interface RadioMemoryMapGroup {
   groups?: RadioMemoryMapSubgroup[];
 }
 
+/** Front-panel menu item a setting corresponds to. */
+export interface RadioMemoryMapFieldMenu {
+  /** Menu index shown on the radio, starting at 0. */
+  number: number;
+  /** Short name printed on the radio, such as SQL. */
+  code?: string;
+}
+
 /** UI metadata for a non-reserved field. */
 export interface RadioMemoryMapFieldUi {
   /** Settings group id. Matches {@link RadioMemoryMapGroup.id} when groups are declared. */
@@ -137,6 +145,8 @@ export interface RadioMemoryMapFieldUi {
   label: string;
   widget: RadioMemoryMapWidget;
   description?: string;
+  /** Front-panel menu reference. Omitted when the setting is not a numbered menu item. */
+  menu?: RadioMemoryMapFieldMenu;
   /** Defaults to true. Set false for firmware / read-only messages. */
   writable?: boolean;
   /** Optional display rank in the settings panel. Lower values come first. EEPROM layout is unchanged. */
