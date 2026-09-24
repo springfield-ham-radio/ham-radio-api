@@ -1,3 +1,9 @@
+## [17.11.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.10.0...v17.11.0) (2026-09-24)
+
+### Features
+
+* add front-panel menu metadata to memory-map fields ([6efd3e9](https://github.com/springfield-ham-radio/ham-radio-api/commit/6efd3e9c92650a01ed83ac408f2193ad90c3dfc3))
+
 ## [17.10.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.9.3...v17.10.0) (2026-09-15)
 
 ### Features
