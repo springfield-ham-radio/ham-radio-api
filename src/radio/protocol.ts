@@ -80,6 +80,11 @@ export interface RadioExchange {
  * Optional `ack` is a second exchange after each chunk (for example an ACK).
  * Optional `delay` is milliseconds to wait after each accepted chunk (Kenwood
  * TM-D710A clone at 57600 needs this so the next `R` does not outrun the radio).
+ * Optional `ready` is a byte prefixed to the next chunk when `ack.expect` times out.
+ * UV-5R firmware that replies `06` to the host ACK stays on the plain frame.
+ * Firmware that stays silent prefixes the next `X` block with `06`. A short
+ * `ack.timeout` (50ms) turns that silence into a timeout before the radio
+ * answers `FE`.
  */
 export interface RadioReadStep {
   description?: string;
@@ -90,6 +95,7 @@ export interface RadioReadStep {
     ack?: RadioExchange;
     timeout?: number;
     delay?: number;
+    ready?: RadioByteToken;
   };
 }
 
