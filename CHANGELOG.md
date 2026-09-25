@@ -1,3 +1,9 @@
+## [17.12.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.11.0...v17.12.0) (2026-09-25)
+
+### Features
+
+* add a ready byte for chunked reads that time out on ack ([5c1c10a](https://github.com/springfield-ham-radio/ham-radio-api/commit/5c1c10a099dc618f2518b2dcda53b92ec21df8b5))
+
 ## [17.11.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.10.0...v17.11.0) (2026-09-24)
 
 ### Features
