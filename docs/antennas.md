@@ -22,7 +22,12 @@ Editing the grid implies lat/lon are the **cell center**. Editing coordinates ke
 
 ## Antenna
 
-A **station antenna** is one physical antenna at one station. The same radiator at two sites is two records.
+An antenna has one owner.
+
+- A **station antenna** is installed at one site (`stationId`). The same radiator at two sites is two records.
+- A **radio antenna** is mounted on one saved radio (`radioId`) and moves with it. A handheld whip is this kind. The same whip on two radios is two records. It has no site of its own; height is about head height, and the operating station supplies the grid.
+
+Exactly one of `stationId` and `radioId` is set.
 
 ```typescript
 import { ANTENNA_TYPES, antennaTypeById, isAntennaTypeId } from "@springfield/ham-radio-api";
@@ -30,6 +35,7 @@ import { ANTENNA_TYPES, antennaTypeById, isAntennaTypeId } from "@springfield/ha
 
 - `AntennaType` / `ANTENNA_TYPES` — generic families (dipole, inverted-V, quarter-wave vertical, 3-element Yagi, magloop, end-fed, dual-band vertical, 2 m Yagi, 70 cm Yagi)
 - `StationAntenna.bands` — `Wavelength` values from `SpectrumBand`
+- `StationAntenna.manufacturer` and `StationAntenna.model` — optional free text. HamBench does not ship a manufacturer catalog.
 - Height is 0.5–120 m AGL. Heading is true degrees of maximum radiation and is omitted for omni types.
 
 Gain, beamwidth, and takeoff helpers are catalog estimates, not manufacturer specs or NEC runs.
