@@ -2,6 +2,7 @@
   "name": "@springfield/ham-radio-api",
   "version": "18.0.1",
   "author": "Bryan Hunt",
+  "license": "MIT",
   "files": [
     "dist/",
     "src/"
