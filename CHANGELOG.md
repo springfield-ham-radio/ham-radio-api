@@ -1,3 +1,9 @@
+## [18.0.1](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.0.0...v18.0.1) (2026-10-03)
+
+### Bug Fixes
+
+* **deps:** bump brace-expansion from 2.1.4 to 2.1.7 ([#13](https://github.com/springfield-ham-radio/ham-radio-api/issues/13)) ([72b7759](https://github.com/springfield-ham-radio/ham-radio-api/commit/72b77590c959b64391b1a693728ad9d75542927b))
+
 ## [18.0.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.12.0...v18.0.0) (2026-10-03)
 
 ### ⚠ BREAKING CHANGES
