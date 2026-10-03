@@ -1,6 +1,6 @@
 {
   "name": "@springfield/ham-radio-api",
-  "version": "17.12.0",
+  "version": "18.0.0",
   "author": "Bryan Hunt",
   "files": [
     "dist/",

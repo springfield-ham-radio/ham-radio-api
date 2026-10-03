@@ -1,3 +1,15 @@
+## [18.0.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.12.0...v18.0.0) (2026-10-03)
+
+### ⚠ BREAKING CHANGES
+
+* **antenna:** StationAntenna.stationId is optional. A radio-mounted antenna sets radioId instead.
+
+Co-authored-by: Cursor <cursoragent@cursor.com>
+
+### Features
+
+* **antenna:** let an antenna belong to a radio ([9f17bf0](https://github.com/springfield-ham-radio/ham-radio-api/commit/9f17bf0e7bb6c95418288d842193b07b98453d0c))
+
 ## [17.12.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v17.11.0...v17.12.0) (2026-09-25)
 
 ### Features
