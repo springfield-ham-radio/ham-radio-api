@@ -1,3 +1,10 @@
+## [18.0.2](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.0.1...v18.0.2) (2026-10-13)
+
+### Bug Fixes
+
+* **deps:** bump handlebars from 4.7.8 to 4.7.10 ([#21](https://github.com/springfield-ham-radio/ham-radio-api/issues/21)) ([807d7f2](https://github.com/springfield-ham-radio/ham-radio-api/commit/807d7f2e04890bab8126b3b49297be6b4b3e0cd0))
+* **deps:** bump source-map-js from 1.2.1 to 1.2.2 ([#20](https://github.com/springfield-ham-radio/ham-radio-api/issues/20)) ([15c2fef](https://github.com/springfield-ham-radio/ham-radio-api/commit/15c2fef9155766449bd2d022407a94a68c18023c))
+
 ## [18.0.1](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.0.0...v18.0.1) (2026-10-03)
 
 ### Bug Fixes
