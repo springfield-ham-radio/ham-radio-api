@@ -43,5 +43,6 @@ export * from "./spectrum/privilege.js";
 
 export * from "./antenna/type.js";
 
+export * from "./station/geo-point.js";
 export * from "./station/radio-station.js";
 export * from "./station/antenna.js";
