@@ -1,3 +1,9 @@
+## [18.1.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.0.2...v18.1.0) (2026-10-16)
+
+### Features
+
+* export shared GeoPoint type ([#19](https://github.com/springfield-ham-radio/ham-radio-api/issues/19)) ([#23](https://github.com/springfield-ham-radio/ham-radio-api/issues/23)) ([0ebc50d](https://github.com/springfield-ham-radio/ham-radio-api/commit/0ebc50d42b5c5b2b071f3cd28c6f3e33d3f76dc3))
+
 ## [18.0.2](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.0.1...v18.0.2) (2026-10-13)
 
 ### Bug Fixes
