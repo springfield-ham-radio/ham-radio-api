@@ -6,6 +6,8 @@ Packages that talk to radios depend on this library. It does not open a serial p
 
 Docs: [HamBench developer docs](https://springfield-ham-radio.github.io/ham-radio-docs/developer/)
 
+Package docs: [radio read/write dialog messages](docs/radio-dialog-messages.md)
+
 ## License
 
 MIT — Copyright (c) 2026 Bryan Hunt. See [LICENSE](LICENSE).

@@ -16,6 +16,7 @@ export * from "./radio/codec-factory.js";
 export * from "./radio/connection.js";
 export * from "./radio/ctcss.js";
 export * from "./radio/dcs.js";
+export * from "./radio/dialog-message.js";
 export * from "./radio/driver.js";
 export * from "./radio/driver-provider.js";
 export * from "./radio/id.js";
