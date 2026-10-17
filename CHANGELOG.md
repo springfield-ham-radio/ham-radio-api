@@ -1,3 +1,9 @@
+## [18.2.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.1.0...v18.2.0) (2026-10-17)
+
+### Features
+
+* **radio:** add optional read and write dialog messages ([#25](https://github.com/springfield-ham-radio/ham-radio-api/issues/25)) ([a169829](https://github.com/springfield-ham-radio/ham-radio-api/commit/a169829bfbf9912b7a39081868cf874fcae0663a)), closes [springfield-ham-radio/ham-radio-api#24](https://github.com/springfield-ham-radio/ham-radio-api/issues/24)
+
 ## [18.1.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.0.2...v18.1.0) (2026-10-16)
 
 ### Features
