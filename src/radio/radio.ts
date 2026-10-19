@@ -1,7 +1,7 @@
 import type { RadioId } from "./id.js";
 import type { RadioMemoryConfig } from "./memory-config.js";
 import type { RadioMemoryMap } from "./memory-map.js";
-import type { RadioProtocolStep } from "./protocol.js";
+import type { RadioOnError, RadioProtocolStep } from "./protocol.js";
 import type { RadioSchema } from "./schema.js";
 import type { RadioDialogMessage } from "./dialog-message.js";
 import type { RadioSerialConfig } from "./serial-config.js";
@@ -23,6 +23,15 @@ export interface Radio {
   serialConfig: RadioSerialConfig;
   readMemory: RadioProtocolStep[];
   writeMemory: RadioProtocolStep[];
+  /**
+   * Optional cleanup exchanges after a failed or cancelled read/write. Not run on success;
+   * skipped when the port is closed. Each list may only contain exchange steps (`send`,
+   * `expect`, `setBaudRate`, `delay`, `timeout`), not read/write/CAT loops.
+   *
+   * @example Kenwood TH-D74 clone exit at the post-switch baud:
+   * `[{ setBaudRate: 57600 }, { send: ['E'] }]`
+   */
+  onError?: RadioOnError;
   /**
    * Optional JSON memory-map for radio-wide settings decode/encode.
    * May be an inline map or a path/$ref resolved by the registry/module.

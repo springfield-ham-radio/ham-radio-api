@@ -137,3 +137,24 @@ export interface RadioCatWriteStep {
 }
 
 export type RadioProtocolStep = RadioExchange | RadioReadStep | RadioWriteStep | RadioCatReadStep | RadioCatWriteStep;
+
+/**
+ * Exchange-only protocol steps (`send`, `expect`, `setBaudRate`, `delay`, `timeout`).
+ * Used for {@link RadioOnError} cleanup lists, which must not include read, write, or CAT loop steps.
+ */
+export type RadioProtocolExchangeStep = RadioExchange;
+
+/**
+ * Optional cleanup exchanges keyed by memory operation. The driver runs the matching list
+ * best-effort after a protocol step fails or the user cancels; it is not run on success and is
+ * skipped when the serial port is already closed.
+ *
+ * @example Kenwood TH-D74 clone exit at the post-switch baud:
+ * ```json
+ * [{ "setBaudRate": 57600 }, { "send": ["E"] }]
+ * ```
+ */
+export interface RadioOnError {
+  readMemory?: RadioProtocolExchangeStep[];
+  writeMemory?: RadioProtocolExchangeStep[];
+}
