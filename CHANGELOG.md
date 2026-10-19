@@ -1,3 +1,9 @@
+## [18.3.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.2.0...v18.3.0) (2026-10-19)
+
+### Features
+
+* **radio:** add optional onError cleanup steps to Radio ([#26](https://github.com/springfield-ham-radio/ham-radio-api/issues/26)) ([931462d](https://github.com/springfield-ham-radio/ham-radio-api/commit/931462dedf010798546886f88f0dbe27caf9d022))
+
 ## [18.2.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.1.0...v18.2.0) (2026-10-17)
 
 ### Features
