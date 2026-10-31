@@ -1,3 +1,13 @@
+## [18.4.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.3.0...v18.4.0) (2026-10-31)
+
+### Features
+
+* add optional ui.section and ui.sectionOrder on memory-map field UI ([#31](https://github.com/springfield-ham-radio/ham-radio-api/issues/31)) ([cfa56d6](https://github.com/springfield-ham-radio/ham-radio-api/commit/cfa56d6fdef01bf3837dcdbc8be091e48550a1ad))
+
+### Bug Fixes
+
+* **deps:** bump fast-uri from 3.1.7 to 3.1.9 ([#30](https://github.com/springfield-ham-radio/ham-radio-api/issues/30)) ([0d1f353](https://github.com/springfield-ham-radio/ham-radio-api/commit/0d1f353a2e5c81b266aac30795b20c5bcbec2c6e))
+
 ## [18.3.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.2.0...v18.3.0) (2026-10-19)
 
 ### Features
