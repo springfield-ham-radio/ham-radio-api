@@ -147,6 +147,11 @@ export interface RadioMemoryMapFieldUi {
   description?: string;
   /** Front-panel menu reference. Omitted when the setting is not a numbered menu item. */
   menu?: RadioMemoryMapFieldMenu;
+  /**
+   * Radio menu group name (e.g. "Display") that UIs use to group radio-wide settings.
+   * Menu numbers are not shown.
+   */
+  section?: string;
   /** Defaults to true. Set false for firmware / read-only messages. */
   writable?: boolean;
   /** Optional display rank in the settings panel. Lower values come first. EEPROM layout is unchanged. */
