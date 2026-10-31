@@ -45,3 +45,43 @@ describe("RadioMemoryMapFieldUi.section", () => {
     expect(field.ui).toHaveProperty("section", "Display");
   });
 });
+
+describe("RadioMemoryMapFieldUi.sectionOrder", () => {
+  it("should accept a section group order on ui", () => {
+    const field = fieldUi({
+      group: "settings",
+      label: "Contrast",
+      widget: "integer",
+      section: "Display",
+      sectionOrder: 1,
+    });
+
+    expect(field.ui?.sectionOrder).toBe(1);
+  });
+
+  it("should allow ui without a section group order", () => {
+    const field = fieldUi({
+      group: "settings",
+      label: "Contrast",
+      widget: "integer",
+      section: "Display",
+    });
+
+    expect(field.ui?.sectionOrder).toBeUndefined();
+  });
+
+  it("should keep section order off the field itself", () => {
+    const field = fieldUi({
+      group: "settings",
+      label: "Beep",
+      widget: "switch",
+      section: "Display",
+      sectionOrder: 2,
+      order: 10,
+    });
+
+    expect(field).not.toHaveProperty("sectionOrder");
+    expect(field.ui).toHaveProperty("sectionOrder", 2);
+    expect(field.ui?.order).toBe(10);
+  });
+});

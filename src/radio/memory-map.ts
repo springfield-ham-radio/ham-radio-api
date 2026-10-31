@@ -152,6 +152,11 @@ export interface RadioMemoryMapFieldUi {
    * Menu numbers are not shown.
    */
   section?: string;
+  /**
+   * Order of section groups. Lower values come first (e.g. the radio menu's hundreds digit).
+   * EEPROM layout is unchanged.
+   */
+  sectionOrder?: number;
   /** Defaults to true. Set false for firmware / read-only messages. */
   writable?: boolean;
   /** Optional display rank in the settings panel. Lower values come first. EEPROM layout is unchanged. */

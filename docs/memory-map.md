@@ -10,12 +10,18 @@ Kenwood drivers set this on the field `ui` object. Omit `section` when the setti
 
 `section` is a display name from the radio menu. It is not:
 
-| Field         | Role                                                                          |
-| ------------- | ----------------------------------------------------------------------------- |
-| `ui.group`    | Settings group id. Matches `RadioMemoryMapGroup.id` when groups are declared. |
-| `ui.subgroup` | Panel section id. Matches `RadioMemoryMapSubgroup.id` on the parent group.    |
-| `ui.menu`     | Numbered front-panel item (`number`, optional `code` such as `SQL`).          |
-| `ui.section`  | Menu group name used for grouping. Numbers are not shown.                     |
+| Field | Role |
+| --- | --- |
+| `ui.group` | Settings group id. Matches `RadioMemoryMapGroup.id` when groups are declared. |
+| `ui.subgroup` | Panel section id. Matches `RadioMemoryMapSubgroup.id` on the parent group. |
+| `ui.menu` | Numbered front-panel item (`number`, optional `code` such as `SQL`). |
+| `ui.section` | Menu group name used for grouping. Numbers are not shown. |
+| `ui.sectionOrder` | Order of those section groups. Lower values come first. |
+| `ui.order` | Display rank of one setting inside the panel. Lower values come first. |
+
+## `ui.sectionOrder`
+
+Optional number that orders section groups. Lower values come first. A Kenwood-style menu can use the hundreds digit (`1` for 100–199, `2` for 200–299). EEPROM layout is unchanged. Omit it when sections have no explicit order.
 
 Example:
 
@@ -27,13 +33,14 @@ Example:
     "group": "settings",
     "label": "Contrast",
     "widget": "integer",
-    "section": "Display"
+    "section": "Display",
+    "sectionOrder": 1
   }
 }
 ```
 
-There is no separate JSON Schema document for memory maps in this package. The TypeScript interfaces are the contract. `ui.section` is an optional string, so validators and schemas that mirror `RadioMemoryMapFieldUi` should accept it and should not require it.
+There is no separate JSON Schema document for memory maps in this package. The TypeScript interfaces are the contract. `ui.section` is an optional string and `ui.sectionOrder` is an optional number, so validators and schemas that mirror `RadioMemoryMapFieldUi` should accept both and should not require them.
 
 ## Versioning
 
-Adding `ui.section` is a compatible type change. A `feat` commit releases a minor version. You do not need to raise `minApiVersion` for maps that omit the field.
+Adding `ui.section` and `ui.sectionOrder` is a compatible type change. A `feat` commit releases a minor version. You do not need to raise `minApiVersion` for maps that omit the fields.
