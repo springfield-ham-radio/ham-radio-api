@@ -41,6 +41,37 @@ Example:
 
 There is no separate JSON Schema document for memory maps in this package. The TypeScript interfaces are the contract. `ui.section` is an optional string and `ui.sectionOrder` is an optional number, so validators and schemas that mirror `RadioMemoryMapFieldUi` should accept both and should not require them.
 
+## String `choices`
+
+Optional named options on a string value (`kind: "ascii"` or `kind: "dtmf"`). Each entry is a `RadioMemoryMapStringChoice`: `label` is the select text, and `value` is the stored character string. It is not an enum index.
+
+Omit `choices` for free text. Existing maps stay valid. The EEPROM layout does not change. A stored string that is not in the list is left as that string.
+
+TH-D74 menu 501 Icon uses this. Radio is stored as `\Y` and RV as `/R`.
+
+```json
+{
+  "id": "symbol",
+  "type": "u8",
+  "value": {
+    "kind": "ascii",
+    "length": 2,
+    "pad": 0,
+    "choices": [
+      { "label": "Radio", "value": "\\Y" },
+      { "label": "RV", "value": "/R" }
+    ]
+  },
+  "ui": {
+    "group": "aprs",
+    "label": "Icon",
+    "widget": "select"
+  }
+}
+```
+
+Schemas that mirror `RadioMemoryMapValueKind` should allow `choices` on ascii and dtmf only, as an array of `{ label, value }` with at least one item when the array is present. `label` is a non-empty string. `value` is a string and may be empty.
+
 ## Versioning
 
-Adding `ui.section` and `ui.sectionOrder` is a compatible type change. A `feat` commit releases a minor version. You do not need to raise `minApiVersion` for maps that omit the fields.
+Adding `ui.section`, `ui.sectionOrder`, and string `choices` are compatible type changes. A `feat` commit releases a minor version. You do not need to raise `minApiVersion` for maps that omit the fields.
