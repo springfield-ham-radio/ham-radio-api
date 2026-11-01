@@ -1,3 +1,9 @@
+## [18.5.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.4.0...v18.5.0) (2026-11-01)
+
+### Features
+
+* add string choices on ascii and dtmf fields ([#32](https://github.com/springfield-ham-radio/ham-radio-api/issues/32)) ([c0a0ba9](https://github.com/springfield-ham-radio/ham-radio-api/commit/c0a0ba979c9877fb12009a4702d96c4ced08de6b))
+
 ## [18.4.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.3.0...v18.4.0) (2026-10-31)
 
 ### Features
