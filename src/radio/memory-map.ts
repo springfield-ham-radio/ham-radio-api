@@ -22,6 +22,16 @@ export type RadioMemoryMapToneValue =
   | { mode: "ctcss"; value: number }
   | { mode: "dcs"; code: number; polarity: "N" | "R" };
 
+/**
+ * Named option for a string setting.
+ * `label` is the name shown in a select. `value` is the stored characters, not an enum index.
+ * TH-D74 menu 501 stores Radio as `\Y` and RV as `/R`.
+ */
+export interface RadioMemoryMapStringChoice {
+  label: string;
+  value: string;
+}
+
 /** How a field's raw bits/bytes become a setting value. */
 export type RadioMemoryMapValueKind =
   | { kind: "integer"; min?: number; max?: number }
@@ -32,6 +42,11 @@ export type RadioMemoryMapValueKind =
       length: number;
       /** Fill byte for unused character slots (default 0xFF). Kenwood names use 0. */
       pad?: number;
+      /**
+       * Named options for a select. Omit for free text.
+       * EEPROM layout is unchanged. An unknown stored string stays that string.
+       */
+      choices?: RadioMemoryMapStringChoice[];
     }
   | {
       kind: "digits";
@@ -49,6 +64,11 @@ export type RadioMemoryMapValueKind =
       length: number;
       /** Character set indexed by byte value; 0xFF terminates. */
       charset?: string;
+      /**
+       * Named options for a select. Omit for free text.
+       * `value` is the stored DTMF string. EEPROM layout is unchanged.
+       */
+      choices?: RadioMemoryMapStringChoice[];
     }
   | {
       kind: "bbcd";
