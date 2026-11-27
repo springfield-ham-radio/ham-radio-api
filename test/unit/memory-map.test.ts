@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import type { RadioMemoryMapField, RadioMemoryMapFieldUi } from "../../dist/index.js";
+import type {
+  RadioMemoryMapChannelBindings,
+  RadioMemoryMapField,
+  RadioMemoryMapFieldUi,
+} from "../../dist/index.js";
 
 function fieldUi(ui: RadioMemoryMapFieldUi): RadioMemoryMapField {
   return {
@@ -83,5 +87,47 @@ describe("RadioMemoryMapFieldUi.sectionOrder", () => {
     expect(field).not.toHaveProperty("sectionOrder");
     expect(field.ui).toHaveProperty("sectionOrder", 2);
     expect(field.ui?.order).toBe(10);
+  });
+});
+
+describe("RadioMemoryMapChannelBindings", () => {
+  const baseBindings: RadioMemoryMapChannelBindings = {
+    records: "channels",
+    receiveFrequency: "rxFreq",
+    transmitFrequency: "txFreq",
+    receiveTone: "rxTone",
+    transmitTone: "txTone",
+  };
+
+  it("should accept bindings without specials", () => {
+    expect(baseBindings.specials).toBeUndefined();
+    expect(baseBindings.records).toBe("channels");
+  });
+
+  it("should accept TH-D74-style special channel labels after regular slots", () => {
+    const bindings: RadioMemoryMapChannelBindings = {
+      ...baseBindings,
+      extras: "channelFlags",
+      specials: {
+        start: 1000,
+        labels: [
+          "L0",
+          "L1",
+          "L2",
+          "U47",
+          "U48",
+          "U49",
+          "Pri",
+        ],
+      },
+    };
+
+    const { start, labels } = bindings.specials!;
+
+    expect(start).toBe(1000);
+    expect(labels).toHaveLength(7);
+    expect(labels[0]).toBe("L0");
+    expect(labels.at(-1)).toBe("Pri");
+    expect(start + labels.length - 1).toBe(1006);
   });
 });

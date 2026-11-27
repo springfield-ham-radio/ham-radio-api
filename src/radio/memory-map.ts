@@ -243,6 +243,14 @@ export interface RadioMemoryMapStruct {
   clearEmpty?: boolean;
 }
 
+/** Labels for special channel slots after the regular channel array. */
+export interface RadioMemoryMapChannelBindingsSpecials {
+  /** First special index; also the count of regular channels (0 … start − 1). */
+  start: number;
+  /** `labels[i]` is the label for channel index `start + i`. */
+  labels: string[];
+}
+
 /**
  * Maps decoded struct fields onto portable RadioChannel fields.
  * Remaining record fields become RadioProgrammedChannel.settings.
@@ -264,6 +272,12 @@ export interface RadioMemoryMapChannelBindings {
    * this struct, when present, also skips the channel.
    */
   extras?: string;
+  /**
+   * Optional special channels stored after the regular channel records in the
+   * same array (e.g. Kenwood TH-D74 scan edges and Pri at indices 1000–1100).
+   * When absent, every record is a regular channel and behavior is unchanged.
+   */
+  specials?: RadioMemoryMapChannelBindingsSpecials;
 }
 
 /**
