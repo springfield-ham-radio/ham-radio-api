@@ -1,3 +1,9 @@
+## [18.6.0](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.5.1...v18.6.0) (2026-11-27)
+
+### Features
+
+* add optional channelBindings specials ([b1c8abd](https://github.com/springfield-ham-radio/ham-radio-api/commit/b1c8abdb1be439312b19fdaa3162a37e46f05976))
+
 ## [18.5.1](https://github.com/springfield-ham-radio/ham-radio-api/compare/v18.5.0...v18.5.1) (2026-11-24)
 
 ### Bug Fixes
